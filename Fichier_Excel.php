@@ -1,11 +1,12 @@
 <?php
 session_start();
 
+//Code pour utiliser des fichier Excel
 require 'vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-
+//Setup des titres
 $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load('Commandes_Snack.xlsx');
 $sheet = $spreadsheet->getActiveSheet();
 $sheet->setCellValue('A1', 'NOM');
@@ -17,28 +18,21 @@ $sheet->setCellValue('F1', 'SALADE');
 
 $writer->save('Commandes_Snack.xlsx');
 
-function insertNOM($ligne, $nom){
+//Fonction pour inscrire les utilisateur au snack
+function insert($colonne, $ligne, $nom, $prenom){
   $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load('Commandes_Snack.xlsx');
   $sheet = $spreadsheet->getActiveSheet();
   $sheet->setCellValue('A'.$ligne, $nom);
-  $writer->save('Commandes_Snack.xlsx');
-}
 
-function insertPRENOM($ligne, $prenom){
-  $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load('Commandes_Snack.xlsx');
-  $sheet = $spreadsheet->getActiveSheet();
   $sheet->setCellValue('B'.$ligne, $prenom);
-  $writer->save('Commandes_Snack.xlsx');
-}
 
-function insertCHOIX($colonne, $ligne){
-  $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load('Commandes_Snack.xlsx');
-  $sheet = $spreadsheet->getActiveSheet();
   $sheet->setCellValue($colonne.$ligne, 'x');
   $writer->save('Commandes_Snack.xlsx');
 }
 
-
+//Récupérer la prochaine ligne
+$_POST
+$ligne =
 
 
 ?>
