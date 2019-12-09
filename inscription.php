@@ -73,23 +73,10 @@
 					</div>
 
 					<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Me Retenir
-							</label>
-						</div>
+
 
 						<div>
-							<a href="#" class="txt1" onClick="Message()">
-								Mot de passe oublié ?
-							</a>
 							<script type="text/javascript">
-   function Message() {
-       var msg="Pour récupérer ou modifier votre mot de passe merci de contacter un administrateur du réseau de l'établissement scolaire.";
-       console.log(msg)
-       alert(msg);
-   }
 </script>
 
 						</div>
@@ -97,7 +84,7 @@
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							Je me connecte
+							Inscription
 						</button>
 					</div>
 				</form>

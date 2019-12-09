@@ -64,9 +64,13 @@
 							<a href="#" class="txt1" onClick="Message()">
 								Mot de passe oublié ?
 							</a>
+						</br>
+							<a href="inscription.php" class="txt1">
+								Inscription
+							</a>
 							<script type="text/javascript">
    function Message() {
-       var msg="Pour récupérer ou modifier votre mot de passe merci de contacter un administrateur du réseau de l'établissement scolaire.";
+       var msg="Pour réinitialiser votre mot de passe merci de contacter un administrateur du réseau de l'établissement scolaire.";
        console.log(msg)
        alert(msg);
    }
