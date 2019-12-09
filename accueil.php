@@ -17,14 +17,14 @@
         </a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Accueil.html">Accueil</a></li>
-          <li><a href="Information.html">Info.</a></li>
+        <li class="active"><a href="accueil.php">Accueil</a></li>
+          <li><a href="information.php">Info.</a></li>
       </ul>
     </div>
   </nav>
   <body>
     <div align="center">
-    <form method="post" action="traitement-accueil.php">
+    <form method="post" action="formulaire_connexion_etudiant.php">
     <input type="submit" value="se connecter">
   </form>
 </div>
