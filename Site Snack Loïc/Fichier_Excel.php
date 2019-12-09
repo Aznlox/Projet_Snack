@@ -111,8 +111,40 @@ function donnee(){
   }
 }
 donnee();
-echo "ok";
+
+//Reset de la base de donnée avec les inscrits
 $req = $bdd->prepare('TRUNCATE TABLE inscrit');
 $req->execute();
+
+//Envoi du mail avec le fichier Excel aux cuisiniers
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/PHPMailer/PHPMailer/src/Exception.php';
+require 'vendor/PHPMailer/PHPMailer/src/PHPMailer.php';
+require 'vendor/PHPMailer/PHPMailer/src/SMTP.php';
+
+$mail = new PHPMailer(); // create a new object
+$mail->CharSet = 'UTF-8';
+$mail->IsSMTP(); // enable SMTP
+$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+$mail->Host = "smtp.gmail.com";
+$mail->Port = 465; // or 587
+$mail->IsHTML(true);
+$mail->Username = "quentin.lignani.schuman@gmail.com";
+$mail->Password = "Admwb2000";
+$mail->SetFrom("l.guo@lprs.fr");
+$mail->Subject = "[Robert Schuman] : Réservation au Snack";
+$mail->addAttachment('Commandes_Snack.xlsx');         // Add attachments
+$mail->Body = "<center><b>Réservation au Snack</b><br><p>Bonjour ! Voilà les commande pour le snack en pièce jointe</p></center></html>";
+$mail->AddAddress("l.guo@lprs.fr");
+
+ if(!$mail->Send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+ } else {
+    echo "Message has been sent";
+ }
 
 ?>
