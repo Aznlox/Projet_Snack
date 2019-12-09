@@ -17,6 +17,6 @@ catch(Exception $e){
 $req = $bdd->prepare('INSERT into etudiant (Nom, Prenom, mail, Classe, mdp, identifiant) value(?,?,?,?,?,?)');
 $req -> execute(array($Nom, $Prenom, $mail, $Classe, $mdp, $identifiant));
  //echo '<meta http-equiv="refresh" content="0;URL=Connexion.php">';
- header('Location: page_connectee_etudiant.php');
+ header('Location: acceuil.php');
 
 ?>

@@ -29,6 +29,7 @@ if($role)
   $_SESSION['login'] = $identifiant;
     header('Location: page_connectee_admin.php');
 // si l'uttilisateur est reconnu administrateur, on le redirige vers sa page
+exit();
 }
 else
 {
@@ -36,8 +37,13 @@ else
   $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant  AND "etudiant")') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
   $reponse->execute(array('identifiant'=>$identifiant)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
   $donne = $reponse->fetch();
-  header('Location: page_connectee_etudiant.php');
+  $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant  AND "etudiant")') ;
+  $donnee = $reponse->fetch();
+  $_SESSION['nom'] = $donnee['Nom'];
+  $_SESSION['prenom'] = $donnee['Prenom'];
+  header('Location: choixmanger.php');
   // si l'uttilisateur est lambda, on le redirige vers sa page
+  exit();
 }
 }
 else {
