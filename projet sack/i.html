@@ -1,0 +1,28 @@
+<style>
+.radio-btn input[type="radio"], .radio-image, .radio-heading, .radio-detail {
+    opacity: 0.4;
+}
+.radio-btn input[type="radio"]:checked {
+    opacity: 1.0;
+}
+.radio-btn input[type="radio"]:checked + label .radio-image,
+.radio-btn input[type="radio"]:checked + label .radio-heading,
+.radio-btn input[type="radio"]:checked + label .radio-detail
+{
+  opacity:1.0;
+}
+</style>
+
+<div class="container text-center">
+
+	<div class="radio-btn" align="center">  
+            <input id="option1" type="radio" name="radio-grp-1" >
+            <label for="option1">
+                <img src="http://www.tutorialspark.com/html5/twitter.png" class="radio-image">
+            </label>
+            <input id="option2" type="radio" name="radio-grp-1" >
+            <label for="option2">
+                <img src="http://www.tutorialspark.com/html5/twitter.png" class="radio-image">
+            </label>
+</div>
+</div>

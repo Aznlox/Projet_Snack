@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <link rel="stylesheet" href="staile.css">
     <meta charset="utf-8">
