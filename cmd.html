@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <title>Commande Panini</title>
   <meta charset="utf-8">
@@ -11,22 +11,42 @@
 
 </head>
 <body>
+  <h3>Les Menus.</h3>
+  <br>
+  <br>
 
 
 <div class="container text-center">
-  <h3>Les Menus.</h3><br>
+  
   <div class="row">
-    <div class="col-sm-4">
-      <img src="polet.jpg" class="img-responsive" alt="Image">
-      <p>Panini Viande</p>
+    <div class="col-sm-4 col-md-4">
+    <div class="ty"> 
+          <p>Panini Viande</p> 
+            <input id="option1" type="radio" name="radio-grp-1">
+            <label for="option1">
+                <img src="polet.jpg" class="radio-image" >
+            </label>
     </div>
-    <div class="col-sm-4">
-      <img src="thon.jpg" class="img-responsive" alt="Image">
-      <p>Panini Poisson</p>
+     </div>
+    <div class="col-sm-4 col-md-4">
+     <div class="ty">  
+            <p>Panini Poisson</p>
+<input id="option2" type="radio" name="radio-grp-1" >
+            <label for="option2">
+                <img src="thon.jpg" class="radio-image">
+            </label>
+            </div>
     </div>
-    <div class="col-sm-4">
-      <img src="fromage.jpg" class="img-responsive" alt="Image">
-      <p>Panini Fromage</p>
+    <div class="col-sm-4 col-md-4">
+      <div class="ty"> 
+      <p>Panini Fromage</p> 
+<input id="option3" type="radio" name="radio-grp-1" align="right" >
+            <label for="option3">
+                <img src="Fromage.jpg" class="radio-image">
+            </label>
+            </div>
+     
+
     </div>
 
 
@@ -35,40 +55,26 @@
 
   </div>
 </div><br>
-<div class ="row row2 text-center">
-<div class="col-sm-4 col-md-4 ">
-  <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline1">1</label>
-</div>
-
-<div class="col-sm-4 col-md-4">
-  <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline2">2</label>
-</div>
-
-
-<div class="col-sm-4 col-md-4">
-  <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline3">3</label>
-</div>
-</div>
 
 
 
 
 <div class="row3">
 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"alt="Image">
-      <p>Salade</p>
-      <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
-  <label class="custom-control-label" for="defaultInline3">4</label>
-</div>
+     <div class="ty">  
+            <p>Salade</p>
+<input id="option4" type="radio" name="radio-grp-1" >
+            <label for="option4">
+                <img src="Salade.jpg" class="radio-image">
+            </label>
+            </div>
+          </div>
 
 
 
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <ad><input type="button" value="Confirmer" onclick="window.location.href='merci.php'"/></ad><br><br>
 </footer>
 
 </body>
