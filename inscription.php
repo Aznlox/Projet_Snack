@@ -40,29 +40,29 @@
 				</div>
 
 				<form class="login100-form validate-form" action="cible_inscription.php" method="POST">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Le nom est néscéssaire">
 						<span class="label-input100">Nom</span>
 						<input class="input100" type="text" name="Nom" placeholder="Entrez votre nom" required/>
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="le prénomest néscéssaire">
 						<span class="label-input100">Prénom</span>
 						<input class="input100" type="text" name="Prenom" placeholder="Entrez votre prénom" required/>
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="le mail est néscéssaire">
 						<span class="label-input100">Mail</span>
 						<input class="input100" type="email" name="mail" placeholder="Entrez votre adresse mail" required/>
 						<span class="focus-input100"></span>
 					</div>
-						<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<div class="wrap-input100 validate-input m-b-26" data-validate="un identifiantest néscéssaire">
 							<span class="label-input100">Identifiant</span>
 						<input class="input100" type="text" name="identifiant" placeholder="Entrez un identifiant" required/>
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate = "Veuillez votre classe">
 						<span class="label-input100">Classe</span>
-						<input class="input100" type="text" name="Classe" placeholder="Entrez votre classe (facultatif)" />
+						<input class="input100" type="text" name="Classe" placeholder="Entrez votre classe" />
 						<span class="focus-input100"></span>
 					</div>
 
