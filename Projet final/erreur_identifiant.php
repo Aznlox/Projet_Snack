@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Espace Connexion</title>
+	<title>Erreur !</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -35,55 +35,27 @@
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
 					<span class="login100-form-title-1">
-						Espace Connexion
+						Erreur ! Cette personne existe déjà
 					</span>
 				</div>
 
-				<form class="login100-form validate-form" action="cible.php" method="POST">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="L'identifiant es néscessaire">
-						<span class="label-input100">Identifiant</span>
-						<input class="input100" type="text" name="identifiant" placeholder="Entrez votre identifiant de connexion" required/>
-						<span class="focus-input100"></span>
-					</div>
+				<form class="login100-form validate-form"  method="POST">
 
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Veuillez entrer un mot de passe">
-						<span class="label-input100">Mot de passe</span>
-						<input class="input100" type="password" name="mdp" placeholder="Entrer votre MDP" required/>
-						<span class="focus-input100"></span>
-					</div>
+
+
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Me Retenir
-							</label>
-						</div>
 
-						<div>
-							<a href="#" class="txt1" onClick="Message()">
-								Mot de passe oublié ?
-							</a>
-						</br>
-							<a href="inscription.php" class="txt1">
-								Inscription
-							</a>
-							<script type="text/javascript">
-   function Message() {
-       var msg="Pour réinitialiser votre mot de passe merci de contacter un administrateur du réseau de l'établissement scolaire.";
-       console.log(msg)
-       alert(msg);
-   }
-</script>
 
 						</div>
+
+
 					</div>
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Je me connecte
+						<button class="login100-form-btn" >
+							<a href="inscription.php"> Rééssayer</a>
 						</button>
-					</div>
 				</form>
 			</div>
 		</div>

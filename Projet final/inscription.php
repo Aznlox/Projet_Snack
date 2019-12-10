@@ -40,29 +40,29 @@
 				</div>
 
 				<form class="login100-form validate-form" action="cible_inscription.php" method="POST">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Le nom est néscéssaire">
 						<span class="label-input100">Nom</span>
 						<input class="input100" type="text" name="Nom" placeholder="Entrez votre nom" required/>
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="le prénomest néscéssaire">
 						<span class="label-input100">Prénom</span>
 						<input class="input100" type="text" name="Prenom" placeholder="Entrez votre prénom" required/>
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="le mail est néscéssaire">
 						<span class="label-input100">Mail</span>
 						<input class="input100" type="email" name="mail" placeholder="Entrez votre adresse mail" required/>
 						<span class="focus-input100"></span>
 					</div>
-						<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<div class="wrap-input100 validate-input m-b-26" data-validate="un identifiantest néscéssaire">
 							<span class="label-input100">Identifiant</span>
 						<input class="input100" type="text" name="identifiant" placeholder="Entrez un identifiant" required/>
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate = "Veuillez votre classe">
 						<span class="label-input100">Classe</span>
-						<input class="input100" type="text" name="Classe" placeholder="Entrez votre classe (facultatif)" />
+						<input class="input100" type="text" name="Classe" placeholder="Entrez votre classe" />
 						<span class="focus-input100"></span>
 					</div>
 
@@ -73,23 +73,10 @@
 					</div>
 
 					<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Me Retenir
-							</label>
-						</div>
+
 
 						<div>
-							<a href="#" class="txt1" onClick="Message()">
-								Mot de passe oublié ?
-							</a>
 							<script type="text/javascript">
-   function Message() {
-       var msg="Pour récupérer ou modifier votre mot de passe merci de contacter un administrateur du réseau de l'établissement scolaire.";
-       console.log(msg)
-       alert(msg);
-   }
 </script>
 
 						</div>
@@ -97,7 +84,7 @@
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							Je me connecte
+							Inscription
 						</button>
 					</div>
 				</form>

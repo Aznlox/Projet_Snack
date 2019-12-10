@@ -4,7 +4,7 @@ $mdp= SHA1($_POST['mdp']);
 $identifiant = $_POST['identifiant'];
 
 try{
-$bdd= new PDO('mysql:host=localhost;dbname=utilisateurs;charset=utf8','root','');
+$bdd= new PDO('mysql:host=localhost;dbname=snack;charset=utf8','root','');
 }
 
 catch(Exception $e){
@@ -41,7 +41,7 @@ else
   $donnee = $reponse->fetch();
   $_SESSION['nom'] = $donnee['Nom'];
   $_SESSION['prenom'] = $donnee['Prenom'];
-  header('Location: choixmanger.php');
+  header('Location: tot.html');
   // si l'uttilisateur est lambda, on le redirige vers sa page
   exit();
 }

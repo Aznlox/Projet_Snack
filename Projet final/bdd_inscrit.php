@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+$_SESSION['nom'] = 'Aggoun';
+$_SESSION['prenom'] = 'Adam';
+
 $nom = $_SESSION['nom'];
 $prenom = $_SESSION['prenom'];
 if(isset($_POST['choix'])){
@@ -10,19 +14,19 @@ else{
 }
 
 //on vérifit si l'utilisateur a déja fait un choix et on modifit son choix
-$bdd = new PDO('mysql:host=localhost;bdname=snack','root','');
+$bdd = new PDO('mysql:host=localhost;dbname=snack','root','');
 $response = $bdd->prepare('SELECT * from Inscrit where nom= ? AND prenom= ?');
 $response->execute(array($nom, $prenom));
 $donnee = $response->fetch();
 if ($donnee) {
-  $req = $bdd->prepare('UPDATE Inscrit set choix = ? where nom = ? AND prenom = ?;');
-  $req->execute(array($choix, $nom, $prenom);
+  $req = $bdd->prepare('UPDATE Inscrit set choix = ? where nom = ? AND prenom = ?');
+  $req->execute(array($choix, $nom, $prenom));
 }
 
 //Si c'est un nouvel Inscrit on le rajoute dans la bdd
 else{
-  $req = $bdd->prepare('INSERT into Inscrit(nom, prenom, choix) VALUE(?, ?, ?)';
-  $req->execute(array($nom, $prenom, $choix);
+  $req = $bdd->prepare('INSERT into Inscrit(nom, prenom, choix) VALUE(?, ?, ?)');
+  $req->execute(array($nom, $prenom, $choix));
 }
 header('location:merci.php');
 

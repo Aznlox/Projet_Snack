@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <link rel="stylesheet" href="staile.css">
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
 
     <input class="favorite styled"
        type="button"
-       value="Retour à l'accueil">
+       value="Retour à l'accueil" onclick="window.location.href='accueil.php'">
      </CENTER>
   </body>
 </html>
