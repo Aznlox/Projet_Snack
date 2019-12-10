@@ -14,7 +14,7 @@
   <h3>Les Menus.</h3>
   <br>
   <br>
-
+<form method="POST" action="bdd_inscrit.php">
 
 <div class="container text-center">
   
@@ -22,7 +22,7 @@
     <div class="col-sm-4 col-md-4">
     <div class="ty"> 
           <p>Panini Viande</p> 
-            <input id="option1" type="radio" name="radio-grp-1">
+            <input id="option1" type="radio" name="choix" value="Viande">
             <label for="option1">
                 <img src="polet.jpg" class="radio-image" >
             </label>
@@ -31,7 +31,7 @@
     <div class="col-sm-4 col-md-4">
      <div class="ty">  
             <p>Panini Poisson</p>
-<input id="option2" type="radio" name="radio-grp-1" >
+<input id="option2" type="radio" name="choix" value="Poisson" >
             <label for="option2">
                 <img src="thon.jpg" class="radio-image">
             </label>
@@ -40,19 +40,12 @@
     <div class="col-sm-4 col-md-4">
       <div class="ty"> 
       <p>Panini Fromage</p> 
-<input id="option3" type="radio" name="radio-grp-1" align="right" >
+<input id="option3" type="radio" name="choix" value="Fromage">
             <label for="option3">
                 <img src="Fromage.jpg" class="radio-image">
             </label>
             </div>
-     
-
     </div>
-
-
-
-
-
   </div>
 </div><br>
 
@@ -60,22 +53,38 @@
 
 
 <div class="row3">
+  <div class="col-sm-6 col-md-6">
 
      <div class="ty">  
             <p>Salade</p>
-<input id="option4" type="radio" name="radio-grp-1" >
+<input id="option4" type="radio" name="choix" value="Salade" >
             <label for="option4">
                 <img src="Salade.jpg" class="radio-image">
             </label>
             </div>
           </div>
+<div class="col-sm-6 col-md-6">
+<div class="ty">  
+            <p>Annuler votre choix</p>
+<input id="option5" type="radio" name="choix" value="0" >
+            <label for="option5">
+                <img src="Rouge.png" class="radio-image">
+            </label>
+          </div>
+         </div>
+      </div>
+<br>
+<br>
+<br>
+    
 
 
-
-
-<footer class="container-fluid text-center">
-  <ad><input type="button" value="Confirmer" onclick="window.location.href='merci.php'"/></ad><br><br>
-</footer>
-
-</body>
-</html>
+    <div class="col-sm-12 col-md-12">
+    <div class="button" align="center">
+<input type="submit" value="Valider votre commande">
+    </div>
+  </div>
+</form>
+  
+  </body>
+    </html>
