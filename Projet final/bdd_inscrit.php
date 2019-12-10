@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-$_SESSION['nom'] = 'Aggoun';
-$_SESSION['prenom'] = 'Adam';
-
 $nom = $_SESSION['nom'];
 $prenom = $_SESSION['prenom'];
 if(isset($_POST['choix'])){

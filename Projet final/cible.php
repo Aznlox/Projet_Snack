@@ -41,7 +41,7 @@ else
   $donnee = $reponse->fetch();
   $_SESSION['nom'] = $donnee['Nom'];
   $_SESSION['prenom'] = $donnee['Prenom'];
-  header('Location: tot.html');
+  header('Location: confirmation.html');
   // si l'uttilisateur est lambda, on le redirige vers sa page
   exit();
 }

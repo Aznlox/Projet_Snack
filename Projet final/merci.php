@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="staile.css">
+    <link rel="stylesheet" href="lib/css/style_merci.css">
     <meta charset="utf-8">
     <title></title>
   </head>
