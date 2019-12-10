@@ -1,5 +1,5 @@
 <?php
-session_start ();
+session_start();
 $mdp= SHA1($_POST['mdp']);
 $identifiant = $_POST['identifiant'];
 
@@ -27,29 +27,28 @@ if($donne) //condition: si la requete est corectement executé et que la variabl
 if($role)
 {
   $_SESSION['login'] = $identifiant;
-    header('Location: page_connectee_admin.php');
+    header('Location: ../vu/page_connectee_admin.php');
 // si l'uttilisateur est reconnu administrateur, on le redirige vers sa page
 exit();
 }
 else
 {
   $_SESSION['login'] = $identifiant;
-  $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant  AND "etudiant")') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
+  $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant  AND role="etudiant"') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
   $reponse->execute(array('identifiant'=>$identifiant)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
   $donne = $reponse->fetch();
-  $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant  AND "etudiant")') ;
-  $donnee = $reponse->fetch();
-  $_SESSION['nom'] = $donnee['Nom'];
-  $_SESSION['prenom'] = $donnee['Prenom'];
-  header('Location: confirmation.html');
-  // si l'uttilisateur est lambda, on le redirige vers sa page
+  $_SESSION['nom'] = $donne['Nom'];
+  $_SESSION['prenom'] = $donne['Prenom'];
+
+  header('Location: ../vu/confirmation.html');
+  // si l'utilisateur est lambda, on le redirige vers sa page
   exit();
 }
 }
 else {
   echo '<body onLoad="alert(\'Identifiant ou Mot de passe incorrect\')">';
 
-echo '<meta http-equiv="refresh" content="0;URL=formulaire_connexion_etudiant.php">';
+echo '<meta http-equiv="refresh" content="0;URL=../vu/formulaire_connexion_etudiant.php">';
 
 
     //si l'uttilisateur n'est pas reconnu, on détruit la session ouverte et on actualise pour rééssayer

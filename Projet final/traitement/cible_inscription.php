@@ -17,14 +17,14 @@ $reponse->execute(array('Nom'=>$Nom,'Prenom'=>$Prenom,'identifiant'=>$identifian
 $donne = $reponse->fetch(); //on execute finalement la requete
 if($donne)
  {
-  header('Location: erreur_identifiant.php');
+  header('Location: ../vu/erreur_identifiant.php');
 }
 else {
 
   $req = $bdd->prepare('INSERT into etudiant (Nom, Prenom, mail, Classe, mdp, identifiant,role) value(?,?,?,?,?,?,?)');
   $req -> execute(array($Nom, $Prenom, $mail, $Classe, $mdp, $identifiant,$role));
    //echo '<meta http-equiv="refresh" content="0;URL=Connexion.php">';
-   header('Location: formulaire_connexion_etudiant.php');
+   header('Location: ../vu/formulaire_connexion_etudiant.php');
 
 }
 ?>

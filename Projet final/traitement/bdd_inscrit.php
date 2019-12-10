@@ -22,9 +22,9 @@ if ($donnee) {
 
 //Si c'est un nouvel Inscrit on le rajoute dans la bdd
 else{
-  $req = $bdd->prepare('INSERT into Inscrit(nom, prenom, choix) VALUE(?, ?, ?)');
+  $req = $bdd->prepare('INSERT into Inscrit(nom, prenom, choix) VALUES(?, ?, ?)');
   $req->execute(array($nom, $prenom, $choix));
 }
-header('location:merci.php');
+header('location:../vu/merci.php');
 
  ?>

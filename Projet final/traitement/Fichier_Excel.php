@@ -2,7 +2,7 @@
 session_start();
 
 //Code pour utiliser des fichier Excel
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -120,9 +120,9 @@ $req->execute();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/PHPMailer/PHPMailer/src/Exception.php';
-require 'vendor/PHPMailer/PHPMailer/src/PHPMailer.php';
-require 'vendor/PHPMailer/PHPMailer/src/SMTP.php';
+require '../vendor/PHPMailer/PHPMailer/src/Exception.php';
+require '../vendor/PHPMailer/PHPMailer/src/PHPMailer.php';
+require '../vendor/PHPMailer/PHPMailer/src/SMTP.php';
 
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
