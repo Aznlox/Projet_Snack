@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Commande Panini</title>
-  <meta charset="utf-8">
+  <title>Commande Panini</title><!--ajout d'un titre intitulé "commande panini"-->
+  <meta charset="utf-8"><!--utilisation du moteur utf-8-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../lib/css/style_commande.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"><!--lien à bootstrap-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!--lien vers le script -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script><!--lien vers le script -->
+  <link rel="stylesheet" href="../lib/css/style_commande.css"><!--lien à la page css-->
 
 </head>
 <body>
-  <h3>Les Menus</h3>
+  <h3>Les Menus</h3>/<!--titre de sous partie -->
+  <br><!--retour à la ligne-->
   <br>
-  <br>
-<form method="POST" action="../traitement/bdd_inscrit.php">
+<form method="POST" action="../traitement/bdd_inscrit.php"><!--traitement des données par la méthode POST -->
 
-<div class="container text-center">
+<div class="container text-center"><!--création d'une division centrant le texte -->
 
   <div class="row">
-    <div class="col-sm-4 col-md-4">
+    <div class="col-sm-4 col-md-4"><!--ajout d'une division pour les tailles d'écran petit et moyen occupant 4 colonnes du tableau bootstrap -->
     <div class="ty">
-          <p>Panini Viande</p>
-            <input id="option1" type="radio" name="choix" value="Viande">
-            <label for="option1">
-                <img src="../lib/images/poulet.jpg" class="radio-image" >
+          <p>Panini Viande</p><!--ajout d'un paragraphe -->
+            <input id="option1" type="radio" name="choix" value="Viande"><!--création de boutons radios -->
+            <label for="option1"><!--légende du  bouton radio -->
+                <img src="../lib/images/poulet.jpg" class="radio-image" ><!--lien vers l'image dans nos dossiers-->
             </label>
     </div>
      </div>
-    <div class="col-sm-4 col-md-4">
+    <div class="col-sm-4 col-md-4"><!--ajout d'une division pour les tailles d'écran petit et moyen -->
      <div class="ty">
-            <p>Panini Poisson</p>
-<input id="option2" type="radio" name="choix" value="Poisson" >
-            <label for="option2">
-                <img src="../lib/images/thon.jpg" class="radio-image">
-            </label>
-            </div>
+            <p>Panini Poisson</p><!--paragraphe -->
+<input id="option2" type="radio" name="choix" value="Poisson" ><!--bouton radio ayant pour titre Poisson -->
+            <label for="option2"><!--légende du bouton radio -->
+                <img src="../lib/images/thon.jpg" class="radio-image"><!--chemin de l'image dans les dossiers de l'ordinateur -->
+            </label><!-- fermeture de la légende-->
+          </div><!--fermeture de la balise division-->
     </div>
-    <div class="col-sm-4 col-md-4">
+    <div class="col-sm-4 col-md-4"><!--ajout d'une division pour les tailles d'écran petit et moyen -->
       <div class="ty">
-      <p>Panini Fromage</p>
-<input id="option3" type="radio" name="choix" value="Fromage">
-            <label for="option3">
-                <img src="../lib/images/Fromage.jpg" class="radio-image">
+      <p>Panini Fromage</p><!--paragraphe -->
+<input id="option3" type="radio" name="choix" value="Fromage"><!--bouton radio ayant pour titre Fromage -->
+            <label for="option3"><!--légende du bouton radio -->
+                <img src="../lib/images/Fromage.jpg" class="radio-image"><!--chemin de l'image dans les dossiers de l'ordinateur -->
             </label>
             </div>
     </div>
@@ -53,22 +53,22 @@
 
 
 <div class="row3">
-  <div class="col-sm-6 col-md-6">
+  <div class="col-sm-6 col-md-6"><!--ajout d'une division pour les tailles d'écran petit et moyen qui occupera les 6 colonnes du tableau bootstrap -->
 
      <div class="ty">
-            <p>Salade</p>
-<input id="option4" type="radio" name="choix" value="Salade" >
-            <label for="option4">
-                <img src="../lib/images/Salade.jpg" class="radio-image">
+            <p>Salade</p><!--ajout d'un paragraphe -->
+<input id="option4" type="radio" name="choix" value="Salade" ><!--ajout bouton radio nommé Salade -->
+            <label for="option4"><!--légende du bouton radio -->
+                <img src="../lib/images/Salade.jpg" class="radio-image"><!--cheminement de l'image dans les dossiers de l'ordinateur -->
             </label>
             </div>
           </div>
-<div class="col-sm-6 col-md-6">
-<div class="ty">
-            <p>Annuler votre choix</p>
-<input id="option5" type="radio" name="choix" value="0" >
-            <label for="option5">
-                <img src="../lib/images/Rouge.png" class="radio-image">
+<div class="col-sm-6 col-md-6"><!--ajout d'une division pour les tailles d'écran petit et moyen qui occupera les 6 colonnes du tableau-->
+<div class="ty"><!--nom de la division -->
+            <p>Annuler votre choix</p><!--ajout d'un paragraphe -->
+<input id="option5" type="radio" name="choix" value="0" ><!--ajout bouton radio nommé choix -->
+            <label for="option5"><!--légende pour l'objet ayant pour id option 5 -->
+                <img src="../lib/images/Rouge.png" class="radio-image"><!--chemin de l'image dans les dossiers de l'ordinateur -->
             </label>
           </div>
          </div>
@@ -79,12 +79,12 @@
 
 
 
-    <div class="col-sm-12 col-md-12">
-    <div class="button" align="center">
-<input type="submit" value="Valider votre commande">
-    </div>
-  </div>
+    <div class="col-sm-12 col-md-12"><!--ajout d'une division pour les tailles d'écran petit et moyen qui occupera les 12 colonnes -->
+    <div class="button" align="center"><!--création d'un bouton centré -->
+<input type="submit" value="Valider votre commande"><!--ajout bouton de type valider nommé "Valider votre commande" -->
+</div><!-- fermeture de la balise division-->
+</div><!-- fermeture de la balise division-->
 </form>
 
-  </body>
-    </html>
+</body><!-- fermeture de la balise corps-->
+    </html><!-- fermeture de la balise html-->
