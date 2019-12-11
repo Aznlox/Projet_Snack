@@ -1,10 +1,10 @@
 <?php
 session_start(); //on lance une session
 $mdp= SHA1($_POST['mdp']); //on importe le mot de passe entré par l'utilisateur dans le formulaire, puis on le hashe à travers l'argorithme sha1, on introduit ensuite ce hash dans la variable "mdp"
-$identifiant = $_POST['identifiant']; //on importe l'identifiant entré par l'u
+$identifiant = $_POST['identifiant']; //on importe l'identifiant entré par l'uttilisateur dans la variable "identifiant"
 
 try{
-$bdd= new PDO('mysql:host=localhost;dbname=snack;charset=utf8','root','');
+$bdd= new PDO('mysql:host=localhost;dbname=snack;charset=utf8','root',''); //à travers PDO, on uttilise le language sql, pour acceder à la base de donnée "snack" avec un encodage en utf avec l'uttilisateur "root" et sans mot de passe
 }
 
 catch(Exception $e){
