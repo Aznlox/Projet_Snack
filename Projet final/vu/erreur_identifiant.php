@@ -5,7 +5,7 @@
 	<meta charset="UTF-8"> <!--On encode en utf-8-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="../lib/images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="../lib/images/icons/logo.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -34,13 +34,12 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(../lib/images/bg-01.jpg);">
+				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);">
 					<span class="login100-form-title-1">
 						Erreur ! Cette personne existe déjà
 					</span> <!--On affiche que l'uttilisateur qui s'est inscrit existe déjà, on a uttilisé l'image dans le dossier image du sossier lib-->
 				</div>
 
-				<form class="login100-form validate-form"  method="POST">
 
 
 
@@ -53,15 +52,17 @@
 
 
 					</div>
-
-						<button class="login100-form-btn" >
+<br>
+<br>
+						<center><button class="login100-form-btn" >
 							<a href="../vu/inscription.php"> Rééssayer</a>
-						</button> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
-				</form>
+						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
+			<br>
+			<br>
+			<br>
 			</div>
 		</div>
 	</div>
-
 <!--===============================================================================================-->
 	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
