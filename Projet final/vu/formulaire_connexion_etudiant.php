@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Espace Connexion</title>
-	<meta charset="UTF-8">
+	<title>Espace Connexion</title> <!--on nomme le titre de la page-->
+	<meta charset="UTF-8"> <!--On encode en utf-8-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="../lib/images/icons/favicon.ico"/>
@@ -27,13 +27,14 @@
 	<link rel="stylesheet" type="text/css" href="../lib/css/util.css">
 	<link rel="stylesheet" type="text/css" href="../lib/css/main.css">
 <!--===============================================================================================-->
+	<!--On importe les bibliothèques de bootsrap néscéssaires au design dans le vendor, on importe les feuilles css...-->
 </head>
 <body>
 
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(../lib/images/bg-01.jpg);">
+				<div class="login100-form-title" style="background-image: url(../lib/images/bg-01.jpg);"> <!--On importe l'image du logo pour le mettre dans le haut du cadre du formulaire-->
 					<span class="login100-form-title-1">
 						Espace Connexion
 					</span>

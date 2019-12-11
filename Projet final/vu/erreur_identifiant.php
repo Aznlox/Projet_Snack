@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Erreur !</title>
-	<meta charset="UTF-8">
+	<title>Erreur !</title> <!--on nomme le titre de la page-->
+	<meta charset="UTF-8"> <!--On encode en utf-8-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="../lib/images/icons/favicon.ico"/>
@@ -27,6 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="../lib/css/util.css">
 	<link rel="stylesheet" type="text/css" href="../lib/css/main.css">
 <!--===============================================================================================-->
+	<!--On importe les bibliothèques de bootsrap néscéssaires au design dans le vendor, on importe les feuilles css...-->
 </head>
 <body>
 
@@ -36,7 +37,7 @@
 				<div class="login100-form-title" style="background-image: url(../lib/images/bg-01.jpg);">
 					<span class="login100-form-title-1">
 						Erreur ! Cette personne existe déjà
-					</span>
+					</span> <!--On affiche que l'uttilisateur qui s'est inscrit existe déjà, on a uttilisé l'image dans le dossier image du sossier lib-->
 				</div>
 
 				<form class="login100-form validate-form"  method="POST">
@@ -46,7 +47,7 @@
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
-
+                                                            <!--on met de l'espace dans le cadre-->
 
 						</div>
 
@@ -55,7 +56,7 @@
 
 						<button class="login100-form-btn" >
 							<a href="../vu/inscription.php"> Rééssayer</a>
-						</button>
+						</button> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
 				</form>
 			</div>
 		</div>
@@ -77,6 +78,6 @@
 	<script src="../vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="../js/main.js"></script>
-
+<!-- On importe les fonctionalité de bootsrap néscéssaires au design de la page-->
 </body>
 </html>
