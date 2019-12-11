@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="../lib/images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="../lib/images/icons/logo.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -33,7 +33,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(../lib/images/bg-01.jpg);">
+				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);">
 					<span class="login100-form-title-1">
 						Inscrivez-vous
 					</span>
