@@ -1,0 +1,4 @@
+<FilesMatch "^(?!accueil\.php$).+\.php$">
+Order deny,allow
+Deny from all
+</FilesMatch>

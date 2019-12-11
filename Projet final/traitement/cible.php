@@ -27,7 +27,7 @@ if($donne) //condition: si la requete est corectement executé et que la variabl
 if($role)
 {
   $_SESSION['login'] = $identifiant;
-    header('Location: ../vu/page_connectee_admin.php');
+    header('Location: ../view/page_connectee_admin.php');
 // si l'uttilisateur est reconnu administrateur, on le redirige vers sa page
 exit();
 }
@@ -40,7 +40,7 @@ else
   $_SESSION['nom'] = $donne['Nom'];
   $_SESSION['prenom'] = $donne['Prenom'];
 
-  header('Location: ../vu/confirmation.html');
+  header('Location: ../view/confirmation.html');
   // si l'utilisateur est lambda, on le redirige vers sa page
   exit();
 }
@@ -48,7 +48,7 @@ else
 else {
   echo '<body onLoad="alert(\'Identifiant ou Mot de passe incorrect\')">';
 
-echo '<meta http-equiv="refresh" content="0;URL=../vu/formulaire_connexion_etudiant.php">';
+echo '<meta http-equiv="refresh" content="0;URL=../view/formulaire_connexion_etudiant.php">';
 
 
     //si l'uttilisateur n'est pas reconnu, on détruit la session ouverte et on actualise pour rééssayer

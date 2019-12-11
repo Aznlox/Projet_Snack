@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<title>Erreur !</title> <!--on nomme le titre de la page-->
+	<title>Espace Connexion</title> <!--on nomme le titre de la page-->
 	<meta charset="UTF-8"> <!--On encode en utf-8-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -34,35 +34,62 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);">
+				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);"> <!--On importe l'image du logo pour le mettre dans le haut du cadre du formulaire-->
 					<span class="login100-form-title-1">
-						Erreur ! Cette personne existe déjà
-					</span> <!--On affiche que l'uttilisateur qui s'est inscrit existe déjà, on a uttilisé l'image dans le dossier image du sossier lib-->
+						Espace Connexion
+					</span>
 				</div>
 
+				<form class="login100-form validate-form" action="../traitement/cible.php" method="POST">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="L'identifiant es néscessaire">
+						<span class="label-input100">Identifiant</span>
+						<input class="input100" type="text" name="identifiant" placeholder="Entrez votre identifiant de connexion" required/>
+						<span class="focus-input100"></span>
+					</div>
 
-
-
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Veuillez entrer un mot de passe">
+						<span class="label-input100">Mot de passe</span>
+						<input class="input100" type="password" name="mdp" placeholder="Entrer votre MDP" required/>
+						<span class="focus-input100"></span>
+					</div>
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
-                                                            <!--on met de l'espace dans le cadre-->
-
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Me Retenir
+							</label>
 						</div>
 
+						<div>
+							<a href="#" class="txt1" onClick="Message()">
+								Mot de passe oublié ?
+							</a>
+						</br>
+							<a href="inscription.php" class="txt1">
+								Inscription
+							</a>
+							<script type="text/javascript">
+   function Message() {
+       var msg="Pour réinitialiser votre mot de passe merci de contacter un administrateur du réseau de l'établissement scolaire.";
+       console.log(msg)
+       alert(msg);
+   }
+</script>
 
+						</div>
 					</div>
-<br>
-<br>
-						<center><button class="login100-form-btn" >
-							<a href="../vu/inscription.php"> Rééssayer</a>
-						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
-			<br>
-			<br>
-			<br>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Je me connecte
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
+
 <!--===============================================================================================-->
 	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -79,6 +106,6 @@
 	<script src="../vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="../js/main.js"></script>
-<!-- On importe les fonctionalité de bootsrap néscéssaires au design de la page-->
+
 </body>
 </html>

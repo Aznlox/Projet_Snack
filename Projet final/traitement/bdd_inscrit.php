@@ -25,6 +25,6 @@ else{
   $req = $bdd->prepare('INSERT into Inscrit(nom, prenom, choix) VALUES(?, ?, ?)');
   $req->execute(array($nom, $prenom, $choix));
 }
-header('location:../vu/merci.php');
+header('location:../view/merci.php');
 
  ?>
