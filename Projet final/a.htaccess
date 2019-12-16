@@ -1,6 +1,0 @@
-<FilesMatch "^(?!accueil\.php$).+\.php$">
-Order deny,allow
-Deny from all
-</FilesMatch>
-RewriteEngine on 
-RewriteRule ^(.*)$ http://localhost/GIT/Projet_Snack/Projet%20final/view/accueil.php$1 [R=301,L]
