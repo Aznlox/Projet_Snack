@@ -1,3 +1,0 @@
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http://localhost/GIT/Projet_Snack/Projet%20final/index.php [NC]
-RewriteRule ^temp/(.*)\.php$ - [F,L]
