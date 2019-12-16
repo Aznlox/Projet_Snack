@@ -20,11 +20,11 @@ $donne = $reponse->fetch(); // enfin, on execute la requete
 if($donne) //condition: si la requete est corectement executé et que la variable "donne" n'est pas vide
 {
 
-  $rep = $bdd->prepare('SELECT * FROM etudiant WHERE role= "ADMIN" AND identifiant = :identifiant') ;
+  $rep = $bdd->prepare('SELECT * FROM etudiant WHERE role= "ADMIN" AND identifiant = :identifiant') ; //on prépare la requete, on demande d'accéder à la table "etudiant" et de voir les les identifiants qui correspondent et dont le role est d'etre administrateur
  $rep->execute(array('identifiant'=>$identifiant));
   $role = $rep->fetch();
   // dans la cadre de la précédente condition, on vérifie dans la base de données si le role de l'uttilisateur est bien celui d'aministarteur
-if($role)
+if($role)//si il existe bel et bien un uttilisateur qui comporte l'identifiant et qui estt administrateur, on applique la condition qui suit
 {
   $_SESSION['login'] = $identifiant;
     header('Location: ../view/page_connectee_admin.php');
