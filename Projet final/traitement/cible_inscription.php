@@ -1,9 +1,12 @@
 <?php
+//cette page sert au traitement php de la page d'inscription 
 $Nom=$_POST['Nom'];
 $Prenom=$_POST['Prenom'];
 $mail=$_POST['mail'];
 $Classe=$_POST['Classe'];
+// on importe les données entrées par l'uttilisateur lors de l'inscription dans des variables du meme nom 
 $mdp= SHA1($_POST['mdp']);
+//pour la mot de passe, on entre dans la variable "mdp"
 $identifiant= $_POST['identifiant'];
 $role="etudiant";
 try{
