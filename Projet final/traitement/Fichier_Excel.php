@@ -82,32 +82,39 @@ function insert($colonne, $ligne, $nom, $prenom){
 }
 
 //Compteur de ligne et récupération des données
-function donnee(){
-  $bdd = new PDO('mysql:host=localhost;dbname=snack','root','');
+function donnee()
+{
+  $bdd = new PDO('mysql:host=localhost;dbname=snack','root',''); // on accède à la pase de donnée "snack"
   $response = $bdd->prepare('SELECT * from Inscrit');
   $response->execute();
   $donnee = $response->fetchall();
-  foreach ($donnee as $value) {
+  foreach ($donnee as $value) 
+  {
     $nom = $value['nom'];
     $prenom = $value['prenom'];
     $ligne = $value['id'];
-    if($value['choix'] == 'Viande'){
+    if($value['choix'] == 'Viande')
+    {
       $colonne = 'C';
     }
-    else if($value['choix'] == 'Fromage'){
+    else if($value['choix'] == 'Fromage')
+    {
       $colonne = 'D';
     }
-    else if($value['choix'] == 'Poisson'){
+    else if($value['choix'] == 'Poisson')
+    {
       $colonne = 'E';
     }
-    else if($value['choix'] == 'Salade'){
+    else if($value['choix'] == 'Salade')
+    {
       $colonne = 'F';
     }
-    else{
+    else
+    {
       $colonne = '0';
     }
 
-    insert($colonne, $ligne, $nom, $prenom);
+    insert($colonne, $ligne, $nom, $prenom); // inserton des variables "colonne", "ligne", "nom", et "prenom"
   }
 }
 donnee();
@@ -124,12 +131,12 @@ require '../vendor/PHPMailer/PHPMailer/src/Exception.php';
 require '../vendor/PHPMailer/PHPMailer/src/PHPMailer.php';
 require '../vendor/PHPMailer/PHPMailer/src/SMTP.php';
 
-$mail = new PHPMailer(); // create a new object
+$mail = new PHPMailer(); // fondation d'un nouvel objet
 $mail->CharSet = 'UTF-8';
-$mail->IsSMTP(); // enable SMTP
+$mail->IsSMTP(); // activer SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
-$mail->SMTPAuth = true; // authentication enabled
-$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+$mail->SMTPAuth = true; // authentication activée
+$mail->SMTPSecure = 'ssl'; // transfer sécurisé activé et néscéssaire notement pour gmail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
@@ -141,7 +148,8 @@ $mail->addAttachment('Commandes_Snack.xlsx');         // Add attachments
 $mail->Body = "<center><b>Réservation au Snack</b><br><p>Bonjour ! Voilà les commande pour le snack en pièce jointe</p></center></html>";
 $mail->AddAddress("l.guo@lprs.fr");
 
- if(!$mail->Send()) {
+ if(!$mail->Send()) 
+ {
     echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
     echo "Message has been sent";
