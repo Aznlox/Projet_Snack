@@ -9,102 +9,88 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet">
 <!--librairie css -->
-    <link rel="stylesheet" href="lib/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="lib/css/animate.css">
-
-    <link rel="stylesheet" href="lib/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="lib/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="lib/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="lib/css/aos.css">
-
-    <link rel="stylesheet" href="lib/css/ionicons.min.css">
-
-    <link rel="stylesheet" href="lib/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="lib/css/jquery.timepicker.css">
-
-
-    <link rel="stylesheet" href="lib/css/flaticon.css">
-    <link rel="stylesheet" href="lib/css/icomoon.css">
-    <link rel="stylesheet" href="lib/css/style.css">
-    <!--fin librairie css -->
-
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--fin librairie css -->
+<!-- en tete -->
   </head>
   <body>
-    <!-- en tete -->
     <div class="py-1 bg-black top">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
-	    		<div class="col-lg-12 d-block">
-		    		<div class="row d-flex">
-					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-						    <p class="mb-0 register-link"><span>Ouvert</span> <span>Lundi - Vendredi</span> <span>12:00 - 13:30</span></p>
-					    </div>
-				    </div>
-			    </div>
-		    </div>
-		  </div>
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+          <div class="col-lg-12 d-block">
+            <div class="row d-flex">
+<!-- barre de navigation -->
+              <button type="button" onclick="window.location.href='http://www.lyceerobertschuman.com/'">  <img src = 'logo_lprs.png' width=40px height=50px></button>
+              <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
+                <p class="mb-0 register-link"><span>Ouvert</span> <span>Lundi - Vendredi</span> <span>12:00 - 13:30</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- barre de navigation -->
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="accueil.php">Snack</a>
-        <button type="button" onclick="window.location.href='http://www.lyceerobertschuman.com/'">  <img src = 'lib/images/logo_lprs.png' width=40px height=50px></button>
-
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- fin de la barre de navigation -->
-    <!-- carousel + boutons connexion + inscription-->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Snack</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- fin de la barre de navigation -->
+<!-- carousel + boutons connexion + inscription-->
     <section class="home-slider owl-carousel js-fullheight">
-      <div class="slider-item js-fullheight" style="background-image: url(lib/images/bg_1.jpg);">
-      	<div class="overlay"></div>
+      <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
+        <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
-
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4 mt-5">Venez au Snack</h1>
-              <p><a href="view/formulaire_connexion_etudiant.php" class="btn btn-info p-3 px-xl-4 py-xl-3">Connexion</a> <a href="view/inscription.php" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Inscription</a></p>
+              <p><a href="formulaire_connexion_etudiant.php" class="btn btn-info p-3 px-xl-4 py-xl-3">Connexion</a> <a href="inscription.php" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Inscription</a></p>
             </div>
-
           </div>
         </div>
       </div>
-
-      <div class="slider-item js-fullheight" style="background-image: url(lib/images/bg_2.jpg);">
-      	<div class="overlay"></div>
+      <div class="slider-item js-fullheight" style="background-image: url(images/bg_2.jpg);">
+        <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
-
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4 mt-5">Une grande variété de Panini</h1>
-              <p><a href="view/formulaire_connexion_etudiant.php" class="btn btn-info p-3 px-xl-4 py-xl-3">Connexion</a> <a href="view/inscription.php" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Inscription</a></p>
+              <p><a href="formulaire_connexion_etudiant.php" class="btn btn-info p-3 px-xl-4 py-xl-3">Connexion</a> <a href="inscription.php" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Inscription</a></p>
             </div>
-
           </div>
         </div>
       </div>
-
-      <div class="slider-item js-fullheight" style="background-image: url(lib/images/bg_3.jpg);">
-      	<div class="overlay"></div>
+      <div class="slider-item js-fullheight" style="background-image: url(images/snack_1.jpg);">
+        <div class="overlay"></div>
         <div class="container">
-          <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
-
+          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4 mt-5">Un service irréprochable</h1>
-              <p><a href="view/formulaire_connexion_etudiant.php" class="btn btn-info p-3 px-xl-4 py-xl-3">Connexion</a> <a href="view/inscription.php" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Inscription</a></p>
+              <p><a href="formulaire_connexion_etudiant.php" class="btn btn-info p-3 px-xl-4 py-xl-3">Connexion</a> <a href="inscription.php" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Inscription</a></p>
             </div>
-
           </div>
         </div>
       </div>
     </section>
-    <!-- fin du carousel + boutons connexion + inscription-->
-    <!-- textes des jours et horaires d'ouverture -->
+<!-- fin du carousel + boutons connexion + inscription-->
+<!-- textes des jours et horaires d'ouverture -->
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container-fluid px-md-5 px-3">
         <div class="row mb-5">
@@ -124,10 +110,11 @@
           </div>
           <div class="col-md-4 col-lg-4">
           </div>
+<!-- fin des textes des jours et horaires d'ouverture -->
+<!-- place le copyright -->
+            </ul>
           </div>
         </div>
-        <!-- fin des textes des jours et horaires d'ouverture -->
-        <!-- place le copyright -->
         <div class="row">
           <div class="col-md-12 text-center">
             <p>
@@ -137,11 +124,11 @@
         </div>
       </div>
     </footer>
-    <!-- fin de placement du copyright -->
-    <!-- symbole du temps de chargement -->
+<!-- fin de placement du copyright -->
+<!-- symbole du temps de chargement -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-  <!-- fin du symbole du temps de chargement -->
-  <!-- script -->
+<!-- fin du symbole du temps de chargement -->
+<!-- script -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
