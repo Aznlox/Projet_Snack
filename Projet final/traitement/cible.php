@@ -17,7 +17,7 @@ $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant
 $reponse->execute(array('identifiant'=>$identifiant,'mdp'=> $mdp )); //on insère sous forme de tableau les données que l'on veut récupérer de la base
 $donne = $reponse->fetch(); // enfin, on execute la requete
 
-if($donne) //condition: si la requete est corectement executé et que la variable "donne" n'est pas vide
+if($donne) //condition: si la requete est correctement executé et que la variable "donne" n'est pas vide
 {
 
   $rep = $bdd->prepare('SELECT * FROM etudiant WHERE role= "ADMIN" AND identifiant = :identifiant') ; //on prépare la requete, on demande d'accéder à la table "etudiant" et de voir les les identifiants qui correspondent et dont le role est d'etre administrateur
