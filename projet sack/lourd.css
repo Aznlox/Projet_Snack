@@ -1,141 +1,113 @@
-@import url(https://fonts.googleapis.com/css?family=Squada+One);
-body {
-  background: #344557 url(https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050) 0 0 no-repeat;
-  background-size: cover;
-}
-body:after {
-  content: "";
-  background: rgba(52, 69, 87, 0.85);
+@import url("https://fonts.googleapis.com/css?family=Corben:700");
+body{
+ background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
 }
 
-a {
-  display: block;
-  width: 220px;
-  height: 70px;
-  z-index: 1;
-}
-a:after {
-  content: "";
-  background: linear-gradient(120deg, blue, white, blue);
-  background-size: 400% 400%;
-  -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
-  -moz-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
-  -webkit-animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
-  animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;
-}
-a > span {
-  display: block;
-  background: linear-gradient(120deg, blue, white, blue);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-animation: gradient 3s ease-in-out infinite;
-  -webkit-animation: gradient 3s ease-in-out infinite;
-  animation: gradient 3s ease-in-out infinite;
+h1 {
+  font-family: 'Corben', cursive;
+  font-size: 6rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
 }
 
-/* helpers */
-.absolute-centering, body:after, a, a:after {
+.hero {
+
+  min-height: 30rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.hero__content {
+  position: relative;
+  align-self: center;
+  padding: 3rem 0;
+}
+
+.snow {
   position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+
 }
 
-.text-formatting, a {
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 70px;
-  font-family: "Squada One", cursive;
-  font-size: 28px;
+.snow .svg {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
 }
 
-/* motion */
-@-moz-keyframes gradient {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
+#snow-top-layer {
+  will-change: transform;
+  -webkit-transform: translateY(-768px);
+          transform: translateY(-768px);
+  -webkit-animation: fall 22.5s infinite linear;
+          animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+  will-change: transform;
+  -webkit-transform: translateY(-768px);
+          transform: translateY(-768px);
+  -webkit-animation: fall 45s infinite linear;
+          animation: fall 45s infinite linear;
+}
+
+@-webkit-keyframes fall {
   100% {
-    background-position: 14% 0%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
+
+@keyframes fall {
   100% {
-    background-position: 14% 0%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-@keyframes gradient {
-  0% {
-    background-position: 14% 0%;
-  }
-  50% {
-    background-position: 87% 100%;
-  }
-  100% {
-    background-position: 14% 0%;
-  }
+
+
+
+
+.example_f {
+ border-radius: 4px;
+ background: linear-gradient(to right, #0b3578, #79a6ed) !important;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 22px;
+ padding: 20px;
+ width: 200px;
+ transition: all 0.4s;
+ cursor: pointer;
+ margin: 5px;
 }
-@-moz-keyframes border {
-  0% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  25% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  50% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
-  }
-  75% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
-  }
+.example_f span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.4s;
 }
-@-webkit-keyframes border {
-  0% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  25% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  50% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
-  }
-  75% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
-  }
+.example_f span:after {
+ content: '\00bb';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -20px;
+ transition: 0.5s;
 }
-@keyframes border {
-  0% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 4px 66px, 4px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  25% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 66px, 216px 66px, 216px 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  50% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 216px 4px, 100% 0%, 0% 0%);
-  }
-  75% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 0%, 0% 0%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0% 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 4px 100%, 0% 100%);
-  }
+.example_f:hover span {
+ padding-right: 25px;
+}
+.example_f:hover span:after {
+ opacity: 1;
+ right: 0;
 }

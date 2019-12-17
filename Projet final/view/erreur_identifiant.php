@@ -55,7 +55,7 @@
 <br>
 <br>
 						<center><button class="login100-form-btn" >
-							<a href="inscription.php"> Rééssayer</a>
+							<a href="inscription.php"> Réessayer</a>
 						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
 			<br>
 			<br>
