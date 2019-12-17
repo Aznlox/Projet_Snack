@@ -1,11 +1,11 @@
 <?php
-//cette page sert au traitement php de la page d'inscription 
+//cette page sert au traitement php de la page d'inscription
 $Nom=$_POST['Nom'];
 $Prenom=$_POST['Prenom'];
 $mail=$_POST['mail'];
 $Classe=$_POST['Classe'];
 $identifiant= $_POST['identifiant'];
-// on importe les données entrées par l'uttilisateur lors de l'inscription dans des variables du meme nom 
+// on importe les données entrées par l'uttilisateur lors de l'inscription dans des variables du meme nom
 $mdp= SHA1($_POST['mdp']);
 //pour le mot de passe, on entre l'information entrée dans la variable "mdp", préalablement hashée à travrers l'algorithme SHA1
 $role="etudiant";

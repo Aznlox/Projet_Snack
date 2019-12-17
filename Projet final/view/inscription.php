@@ -64,7 +64,7 @@
 
 					<div class="wrap-input100 validate-input m-b-26" data-validate = "Veuillez votre classe">
 						<span class="label-input100">Classe</span>
-						<select name="classe" id="classe-select">
+						<select name="Classe" id="classe-select">
 								<option value="">--Choisir une classe--</option>
 								<option value="SLAM 1">SLAM 1</option>
 								<option value="SLAM 2">SLAM 2</option>
@@ -73,12 +73,6 @@
 								<option value="CPRP 1">CPRP 1</option>
 								<option value="CPRP 2">CPRP 2</option>
 						</select>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-26" data-validate = "Veuillez votre classe">
-						<span class="label-input100">Classe</span>
-						<input class="input100" type="text" name="Classe" placeholder="Entrez votre classe" />
-						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Veuillez entrer un mot de passe">
