@@ -16,8 +16,8 @@ $bdd= new PDO('mysql:host=localhost;dbname=snack;charset=utf8','root',''); // on
 catch(Exception $e){
   die('Erreur:'.$e->getMessage());
 }
-$reponse = $bdd->prepare('SELECT * FROM etudiant WHERE Nom= :Nom and Prenom= :Prenom and :mail or identifiant= :identifiant') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
-$reponse->execute(array('Nom'=>$Nom,'Prenom'=>$Prenom, 'mail'=>$mail,'identifiant'=>$identifiant)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
+$reponse = $bdd->prepare('SELECT * FROM etudiant WHERE mail = :mail') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
+$reponse->execute(array('mail'=>$mail)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
 $donne = $reponse->fetch(); //on execute finalement la requete
 if($donne) // si la perssone existe bel et bien, on applique la condition qui suit
  {
