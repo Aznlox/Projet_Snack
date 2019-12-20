@@ -1,7 +1,7 @@
 <?php
 session_start(); //on lance une session
 $mdp= SHA1($_POST['mdp']); //on importe le mot de passe entré par l'utilisateur dans le formulaire, puis on le hashe à travers l'argorithme sha1, on introduit ensuite ce hash dans la variable "mdp"
-$identifiant = $_POST['identifiant']; //on importe l'identifiant entré par l'uttilisateur dans la variable "identifiant"
+$identifiant = $_POST['identifiant']; //on importe l'identifiant entré par l'utilisateur dans la variable "identifiant"
 
 try{
 $bdd= new PDO('mysql:host=localhost;dbname=snack;charset=utf8','root',''); //à travers PDO, on uttilise le language sql, pour acceder à la base de donnée "snack" avec un encodage en utf avec l'uttilisateur "root" et sans mot de passe
@@ -20,30 +20,39 @@ $donne = $reponse->fetch(); // enfin, on execute la requete
 if($donne) //condition: si la requete est correctement executé et que la variable "donne" n'est pas vide
 {
 
-  $rep = $bdd->prepare('SELECT * FROM etudiant WHERE role= "ADMIN" AND identifiant = :identifiant') ; //on prépare la requete, on demande d'accéder à la table "etudiant" et de voir les les identifiants qui correspondent et dont le role est d'etre administrateur
- $rep->execute(array('identifiant'=>$identifiant));
-  $role = $rep->fetch();
-  // dans la cadre de la précédente condition, on vérifie dans la base de données si le role de l'uttilisateur est bien celui d'aministarteur
-if($role)//si il existe bel et bien un uttilisateur qui comporte l'identifiant et qui estt administrateur, on applique la condition qui suit
-{
-  $_SESSION['login'] = $identifiant;
+    $rep = $bdd->prepare('SELECT * FROM etudiant WHERE role= "ADMIN" AND identifiant = :identifiant') ; //on prépare la requete, on demande d'accéder à la table "etudiant" et de voir les les identifiants qui correspondent et dont le role est d'etre administrateur
+    $rep->execute(array('identifiant'=>$identifiant));
+    $role = $rep->fetch();
+    // dans la cadre de la précédente condition, on vérifie dans la base de données si le role de l'uttilisateur est bien celui d'aministarteur
+  if($role)//si il existe bel et bien un uttilisateur qui comporte l'identifiant et qui estt administrateur, on applique la condition qui suit
+  {
+    $_SESSION['login'] = $identifiant;
     header('Location: ../view/page_connectee_admin.php');
-// si l'uttilisateur est reconnu administrateur, on le redirige vers sa page
-exit();
-}
-else
-{
-  $_SESSION['login'] = $identifiant;
-  $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant  AND role="etudiant"') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
-  $reponse->execute(array('identifiant'=>$identifiant)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
-  $donne = $reponse->fetch();
-  $_SESSION['nom'] = $donne['Nom'];
-  $_SESSION['prenom'] = $donne['Prenom'];
-
-  header('Location: ../view/confirmation.html');
-  // si l'utilisateur est lambda, on le redirige vers sa page
+  // si l'uttilisateur est reconnu administrateur, on le redirige vers sa page
   exit();
-}
+  }
+  $req = $bdd->prepare('SELECT * FROM etudiant WHERE verif= "0" AND identifiant = :identifiant') ; //on prépare la requete, on demande d'accéder à la table "etudiant" et de voir les les identifiants qui correspondent et dont le role est d'etre administrateur
+  $req->execute(array('identifiant'=>$identifiant));
+  $verif = $req->fetch();
+  if($verif){
+    $_SESSION['identifiant'] = $identifiant;
+    header('location:../view/changement_mdp.php');
+    exit();
+  }
+
+  else
+  {
+    $_SESSION['login'] = $identifiant;
+    $reponse = $bdd->prepare('SELECT * FROM etudiant WHERE identifiant= :identifiant  AND role="etudiant"') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
+    $reponse->execute(array('identifiant'=>$identifiant)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
+    $donne = $reponse->fetch();
+    $_SESSION['nom'] = $donne['Nom'];
+    $_SESSION['prenom'] = $donne['Prenom'];
+
+    header('Location: ../view/confirmation.html');
+    // si l'utilisateur est lambda, on le redirige vers sa page
+    exit();
+  }
 }
 else {
   echo '<body onLoad="alert(\'Identifiant ou Mot de passe incorrect\')">';

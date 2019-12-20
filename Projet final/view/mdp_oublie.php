@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<title>Erreur !</title> <!--on nomme le titre de la page-->
+	<title>Mot de passe oublié</title> <!--on nomme le titre de la page-->
 	<meta charset="UTF-8"> <!--On encode en utf-8-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -34,35 +34,44 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);">
+				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);"> <!--On importe l'image du logo pour le mettre dans le haut du cadre du formulaire-->
 					<span class="login100-form-title-1">
-						Erreur ! Le mail ou l'identifiant est déjà utilisé
-					</span> <!--On affiche que l'uttilisateur qui s'est inscrit existe déjà, on a uttilisé l'image dans le dossier image du dossier lib-->
+						Mot de passe oublié
+					</span>
 				</div>
 
-
-
-
+				<form class="login100-form validate-form" action="../traitement/traitement_mdp_oublie.php" method="POST">
+					<div class="wrap-input100 validate-input m-b-26">
+						<span class="label-input100">Mail</span>
+						<input class="input100" type="email" name="email" placeholder="Entrez votre e-mail" required/>
+						<span class="focus-input100"></span>
+					</div>
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
-                                                            <!--on met de l'espace dans le cadre-->
-
+              <?php
+              session_start();
+              if(isset($_SESSION['erreur_mail'])){
+                if($_SESSION['erreur_mail'] == 1) {
+                  echo "E-mail non existant";
+                  $_SESSION['erreur_mail'] = 0;
+                }
+              }
+              ?>
 						</div>
 
-
 					</div>
-<br>
-<br>
-						<center><button class="login100-form-btn" >
-							<a href="inscription.php"> Réessayer</a>
-						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
-			<br>
-			<br>
-			<br>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Réinitialiser mon mot de passe
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
+
 <!--===============================================================================================-->
 	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -79,6 +88,6 @@
 	<script src="../vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="../js/main.js"></script>
-<!-- On importe les fonctionalité de bootsrap néscéssaires au design de la page-->
+
 </body>
 </html>

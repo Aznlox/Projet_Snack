@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Erreur !</title> <!--on nomme le titre de la page-->
+	<title>Confirmation mot de passe oublié</title> <!--on nomme le titre de la page-->
 	<meta charset="UTF-8"> <!--On encode en utf-8-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -36,12 +36,9 @@
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);">
 					<span class="login100-form-title-1">
-						Erreur ! Le mail ou l'identifiant est déjà utilisé
-					</span> <!--On affiche que l'uttilisateur qui s'est inscrit existe déjà, on a uttilisé l'image dans le dossier image du dossier lib-->
+						Vous recevrez un mail avec votre mot de passe de secours dans quelques instant
+					</span>
 				</div>
-
-
-
 
 
 					<div class="flex-sb-m w-full p-b-30">
@@ -55,8 +52,8 @@
 <br>
 <br>
 						<center><button class="login100-form-btn" >
-							<a href="inscription.php"> Réessayer</a>
-						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
+							<a href="formulaire_connexion_etudiant.php"> Connexion</a>
+						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page de connexion -->
 			<br>
 			<br>
 			<br>
