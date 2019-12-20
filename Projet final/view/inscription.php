@@ -65,7 +65,7 @@
 					<div class="wrap-input100 validate-input m-b-26" data-validate = "Veuillez votre classe">
 						<span class="label-input100">Classe</span>
 						<select name="Classe" id="classe-select">
-								<option value="">--Choisir une classe--</option>
+								<option value="">Choisir une classe</option>
 								<option value="SLAM 1">SLAM 1</option>
 								<option value="SLAM 2">SLAM 2</option>
 								<option value="SISR 1">SISR 1</option>
