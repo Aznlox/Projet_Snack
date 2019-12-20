@@ -48,7 +48,7 @@
     <!-- barre de navigation -->
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="accueil.php">Snack</a>
+	      <a class="navbar-brand" href="index.php">Snack</a>
         <button type="button" onclick="window.location.href='http://www.lyceerobertschuman.com/'">  <img src = 'lib/images/logo_lprs.png' width=40px height=50px></button>
 
 
@@ -104,29 +104,9 @@
       </div>
     </section>
     <!-- fin du carousel + boutons connexion + inscription-->
-    <!-- textes des jours et horaires d'ouverture -->
+
     <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container-fluid px-md-5 px-3">
-        <div class="row mb-5">
-          <div class="col-md-4 col-lg-4">
-          </div>
-          <div class="col-md-4 col-lg-4">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Ouverture</h2>
-              <ul class="list-unstyled open-hours">
-                <li class="d-flex"><span>Lundi</span><span>12:00 - 13:30</span></li>
-                <li class="d-flex"><span>Mardi</span><span>12:00 - 13:30</span></li>
-                <li class="d-flex"><span>Mercredi</span><span>12:00 - 13:30</span></li>
-                <li class="d-flex"><span>Jeudi</span><span>12:00 - 13:30</span></li>
-                <li class="d-flex"><span>Vendredi</span><span>12:00 - 13:30</span></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4">
-          </div>
-          </div>
-        </div>
-        <!-- fin des textes des jours et horaires d'ouverture -->
+      
         <!-- place le copyright -->
         <div class="row">
           <div class="col-md-12 text-center">
