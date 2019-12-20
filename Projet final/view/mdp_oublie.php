@@ -40,6 +40,7 @@
 					</span>
 				</div>
 
+				<!--formulaire pour récupérer le mail de l'utilisateur-->
 				<form class="login100-form validate-form" action="../traitement/traitement_mdp_oublie.php" method="POST">
 					<div class="wrap-input100 validate-input m-b-26">
 						<span class="label-input100">Mail</span>
@@ -49,6 +50,8 @@
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
+
+							<!--gestion d'erreur-->
               <?php
               session_start();
               if(isset($_SESSION['erreur_mail'])){
@@ -61,7 +64,7 @@
 						</div>
 
 					</div>
-
+					<!--bouton pour encoyer le form-->
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Réinitialiser mon mot de passe

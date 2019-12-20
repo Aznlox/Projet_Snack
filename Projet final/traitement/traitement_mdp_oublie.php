@@ -25,7 +25,7 @@ $email=$_POST['email'];
 
 $bdd= new PDO('mysql:host=localhost;dbname=snack;charset=utf8','root',''); // on se connecte à la base de donnée "snack", avec l'uttilisateur "root" avec l'encodage utf-8
 
-$reponse = $bdd->prepare('SELECT * FROM etudiant WHERE mail = :mail') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
+$reponse = $bdd->prepare('SELECT * FROM etudiant WHERE mail = :mail') ;  //on prepare la requete de php pour accéder aux identifiants dans la base de données en sql
 $reponse->execute(array('mail'=>$email)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
 $donne = $reponse->fetch(); //on execute finalement la requete
 if($donne) // si la perssone existe bel et bien, on applique la condition qui suit
@@ -54,6 +54,7 @@ if($donne) // si la perssone existe bel et bien, on applique la condition qui su
       echo "Message has been sent";
    }
 
+//hashé le mdp pour le rajouté dans la bdd
    $smdp= SHA1($mdp);
 
    $req = $bdd->prepare('UPDATE etudiant SET mdp = ? , verif = 0 WHERE mail = ?');
@@ -62,7 +63,7 @@ if($donne) // si la perssone existe bel et bien, on applique la condition qui su
 
    header('location:../view/reinit_mdp.php');
 }
-else // si la condition précédente n'est pas vérifiée, on applique la condition suivante
+else //Gestion d'erreur
 {
   $_SESSION['erreur_mail'] = 1;
   header('location:../view/mdp_oublie.php');
