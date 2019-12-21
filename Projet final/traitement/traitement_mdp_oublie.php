@@ -8,6 +8,7 @@ require '../vendor/PHPMailer/PHPMailer/src/Exception.php';
 require '../vendor/PHPMailer/PHPMailer/src/PHPMailer.php';
 require '../vendor/PHPMailer/PHPMailer/src/SMTP.php';
 
+//fonction pour généré un mot de passe aléatoire
 function Genere_Password($size)
 {
   $mdp ='';
