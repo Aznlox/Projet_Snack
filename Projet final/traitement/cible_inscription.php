@@ -1,10 +1,18 @@
 <?php
 //cette page sert au traitement php de la page d'inscription
+<<<<<<< HEAD
 $Nom= $_POST['Nom'];
 $Prenom= $_POST['Prenom'];
 $mail= $_POST['mail'];
 $Classe= $_POST['Classe'];
 $identifiant = $_POST['identifiant'];
+=======
+$Nom=$_POST['Nom'];
+$Prenom=$_POST['Prenom'];
+$mail=$_POST['mail'];
+$Classe=$_POST['Classe'];
+$identifiant= $_POST['identifiant'];
+>>>>>>> 32d2c9e1096a93ddf1fbcc88aca1231f764bd8bd
 // on importe les données entrées par l'uttilisateur lors de l'inscription dans des variables du meme nom
 $mdp= SHA1($_POST['mdp']);
 //pour le mot de passe, on entre l'information entrée dans la variable "mdp", préalablement hashée à travrers l'algorithme SHA1
@@ -17,8 +25,8 @@ $bdd= new PDO('mysql:host=localhost;dbname=snack;charset=utf8','root',''); // on
 catch(Exception $e){
   die('Erreur:'.$e->getMessage());
 }
-$reponse = $bdd->prepare('SELECT * FROM etudiant WHERE Nom= :Nom and Prenom= :Prenom and :mail or identifiant= :identifiant') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
-$reponse->execute(array('Nom'=>$Nom,'Prenom'=>$Prenom, 'mail'=>$mail,'identifiant'=>$identifiant)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
+$reponse = $bdd->prepare('SELECT * FROM etudiant WHERE mail = :mail or identifiant = :identifiant ') ;  //on prepare la requete de php pour accéder aux identifiants et aux mdp dans la base de données en sql
+$reponse->execute(array('mail'=>$mail, 'identifiant'=>$identifiant)); //on insère sous forme de tableau les données que l'on veut récupérer de la base
 $donne = $reponse->fetch(); //on execute finalement la requete
 if($donne) // si la perssone existe bel et bien, on applique la condition qui suit
  {

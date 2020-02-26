@@ -55,27 +55,16 @@
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Me Retenir
-							</label>
 						</div>
 
 						<div>
-							<a href="#" class="txt1" onClick="Message()">
+							<a href="mdp_oublie.php" class="txt1">
 								Mot de passe oublié ?
 							</a>
 						</br>
 							<a href="inscription.php" class="txt1">
 								Inscription
 							</a>
-							<script type="text/javascript">
-   function Message() {
-       var msg="Pour réinitialiser votre mot de passe merci de contacter un administrateur du réseau de l'établissement scolaire.";
-       console.log(msg)
-       alert(msg);
-   }
-</script>
 
 						</div>
 					</div>

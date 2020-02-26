@@ -36,8 +36,8 @@
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(../lib/images/logo.png);">
 					<span class="login100-form-title-1">
-						Erreur ! Cette personne existe déjà
-					</span> <!--On affiche que l'uttilisateur qui s'est inscrit existe déjà, on a uttilisé l'image dans le dossier image du sossier lib-->
+						Erreur ! Le mail ou l'identifiant est déjà utilisé
+					</span> <!--On affiche que l'uttilisateur qui s'est inscrit existe déjà, on a uttilisé l'image dans le dossier image du dossier lib-->
 				</div>
 
 
@@ -55,7 +55,7 @@
 <br>
 <br>
 						<center><button class="login100-form-btn" >
-							<a href="inscription.php"> Rééssayer</a>
+							<a href="inscription.php"> Réessayer</a>
 						</button></center> <!--On met un bouton dans lequel on met un lien qui retourne vers la page d'inscription, ainsi, on demande à l'uttilisateuir si il veut résséyaer et si oui on lui propose de rééssayer-->
 			<br>
 			<br>
