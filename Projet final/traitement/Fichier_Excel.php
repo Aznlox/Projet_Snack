@@ -88,7 +88,7 @@ function donnee()
   $response = $bdd->prepare('SELECT * from Inscrit');
   $response->execute();
   $donnee = $response->fetchall();
-  foreach ($donnee as $value) 
+  foreach ($donnee as $value)
   {
     $nom = $value['nom'];
     $prenom = $value['prenom'];
@@ -148,11 +148,12 @@ $mail->addAttachment('Commandes_Snack.xlsx');         // Add attachments
 $mail->Body = "<center><b>Réservation au Snack</b><br><p>Bonjour ! Voilà les commande pour le snack en pièce jointe</p></center></html>";
 $mail->AddAddress("l.guo@lprs.fr");
 
- if(!$mail->Send()) 
+ if(!$mail->Send())
  {
     echo "Mailer Error: " . $mail->ErrorInfo;
- } else {
+ }
+ else
+{
     echo "Message has been sent";
  }
-
 ?>
