@@ -1,0 +1,717 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr-fr"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="fr-fr"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="fr-fr"><![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie9" lang="fr-fr"><![endif]-->
+<html lang="fr-fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Panini Viande hachée - Very Nice Pizza</title>
+					<meta name="description" content="Ingrédients:
+Fromage
+Tomate
+Viande hachée
+" />
+						<meta name="generator" content="PrestaShop" />
+		<meta name="robots" content="index,follow" />
+		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1549642718" />
+		<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1549642718" />
+									<link rel="stylesheet" href="/themes/sushi_uptown/css/global.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/autoload/highdpi.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/autoload/responsive-tables.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/autoload/uniform.default.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/js/jquery/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/product.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/print.css" type="text/css" media="print" />
+							<link rel="stylesheet" href="/js/jquery/plugins/bxslider/jquery.bxslider.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/js/jquery/plugins/jqzoom/jquery.jqzoom.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/modules/blockpermanentlinks/blockpermanentlinks.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blockcategories/blockcategories.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blocklanguages/blocklanguages.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blockcontact/blockcontact.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/productscategory/css/productscategory.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blocknewsletter/blocknewsletter.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blocktags/blocktags.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blocktopmenu/css/blocktopmenu.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blocktopmenu/css/superfish-modified.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blockuserinfo/blockuserinfo.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/blockviewed/blockviewed.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/modules/homefeatured/homefeatured.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/modules/sendtoafriend/sendtoafriend.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/themes/sushi_uptown/css/product_list.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="/modules/blockreinsurance/style.css" type="text/css" media="all" />
+							<link rel="stylesheet" href="http://www.very-nice-pizza.fr/themes/sushi_uptown/css/theme-styles.css" type="text/css" media="all" />
+					<script type="text/javascript">
+var FancyboxI18nClose = 'Fermer';
+var FancyboxI18nNext = 'Suivant';
+var FancyboxI18nPrev = 'Pr&eacute;c&eacute;dent';
+var PS_CATALOG_MODE = true;
+var ajaxsearch = true;
+var allowBuyWhenOutOfStock = true;
+var attribute_anchor_separator = '-';
+var attributesCombinations = [];
+var availableLaterValue = '';
+var availableNowValue = '';
+var baseDir = 'http://www.very-nice-pizza.fr/';
+var baseUri = 'http://www.very-nice-pizza.fr/';
+var contentOnly = false;
+var currency = {"id":1,"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac","blank":"1","conversion_rate":"1.000000","deleted":"0","format":"2","decimals":"1","active":"1","prefix":"","suffix":" \u20ac","id_shop_list":null,"force_id":false};
+var currencyBlank = 1;
+var currencyFormat = 2;
+var currencyRate = 1;
+var currencySign = '€';
+var currentDate = '2019-12-03 09:49:14';
+var customerGroupWithoutTax = false;
+var customizationFields = false;
+var customizationId = null;
+var default_eco_tax = 0;
+var displayList = false;
+var displayPrice = 0;
+var doesntExist = 'Ce produit n\'existe pas dans cette déclinaison. Vous pouvez néanmoins en sélectionner une autre.';
+var doesntExistNoMore = 'Ce produit n\'est plus en stock';
+var doesntExistNoMoreBut = 'avec ces options mais reste disponible avec d\'autres options';
+var ecotaxTax_rate = 0;
+var fieldRequired = 'Veuillez remplir tous les champs, puis enregistrer votre personnalisation';
+var groupReduction = 0;
+var idDefaultImage = 72;
+var id_lang = 1;
+var id_product = 51;
+var img_prod_dir = 'http://www.very-nice-pizza.fr/img/p/';
+var img_ps_dir = 'http://www.very-nice-pizza.fr/img/';
+var instantsearch = false;
+var isGuest = 0;
+var isLogged = 0;
+var isMobile = false;
+var jqZoomEnabled = true;
+var maxQuantityToAllowDisplayOfLastQuantityMessage = 3;
+var minimalQuantity = 1;
+var noTaxForThisProduct = false;
+var oosHookJsCodeFunctions = [];
+var page_name = 'product';
+var priceDisplayMethod = 0;
+var priceDisplayPrecision = 2;
+var productAvailableForOrder = true;
+var productBasePriceTaxExcl = 4.583333;
+var productBasePriceTaxExcluded = 4.583333;
+var productBasePriceTaxIncl = 5.5;
+var productHasAttributes = false;
+var productPrice = 5.5;
+var productPriceTaxExcluded = 4.583333;
+var productPriceTaxIncluded = 5.5;
+var productPriceWithoutReduction = 5.5;
+var productReference = '';
+var productShowPrice = false;
+var productUnitPriceRatio = 0;
+var product_fileButtonHtml = 'Ajouter';
+var product_fileDefaultHtml = 'Aucun fichier sélectionné';
+var product_specific_price = [];
+var quantitiesDisplayAllowed = false;
+var quantityAvailable = 0;
+var quickView = true;
+var reduction_percent = 0;
+var reduction_price = 0;
+var roundMode = 2;
+var specific_currency = false;
+var specific_price = 0;
+var static_token = '2491eb6b636e49449a99ebe62634ea57';
+var stf_msg_error = 'Votre e-mail n\'a pas pu être envoyé. Veuillez vérifier l\'adresse et réessayer.';
+var stf_msg_required = 'Vous n\'avez pas rempli les champs requis';
+var stf_msg_success = 'Votre e-mail a bien été envoyé';
+var stf_msg_title = 'Envoyer à un ami';
+var stf_secure_key = '61ba8d7f122a3c879e82f3384c349f9c';
+var stock_management = 0;
+var taxRate = 20;
+var token = '2491eb6b636e49449a99ebe62634ea57';
+var uploading_in_progress = 'Envoi en cours, veuillez patienter...';
+var usingSecureMode = false;
+</script>
+
+						<script type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"></script>
+						<script type="text/javascript" src="/js/jquery/jquery-migrate-1.2.1.min.js"></script>
+						<script type="text/javascript" src="/js/jquery/plugins/jquery.easing.js"></script>
+						<script type="text/javascript" src="/js/tools.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/global.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/autoload/10-bootstrap.min.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/autoload/15-jquery.total-storage.min.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/autoload/15-jquery.uniform-modified.js"></script>
+						<script type="text/javascript" src="/js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
+						<script type="text/javascript" src="/js/jquery/plugins/jquery.idTabs.js"></script>
+						<script type="text/javascript" src="/js/jquery/plugins/jquery.scrollTo.js"></script>
+						<script type="text/javascript" src="/js/jquery/plugins/jquery.serialScroll.js"></script>
+						<script type="text/javascript" src="/js/jquery/plugins/bxslider/jquery.bxslider.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/product.js"></script>
+						<script type="text/javascript" src="/js/jquery/plugins/jqzoom/jquery.jqzoom.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/tools/treeManagement.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/modules/productscategory/js/productscategory.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/modules/blocknewsletter/blocknewsletter.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/modules/blocktopmenu/js/hoverIntent.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/modules/blocktopmenu/js/superfish-modified.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/modules/blocktopmenu/js/blocktopmenu.js"></script>
+						<script type="text/javascript" src="/themes/sushi_uptown/js/modules/sendtoafriend/sendtoafriend.js"></script>
+						<script type="text/javascript" src="/modules/ganalytics/views/js/GoogleAnalyticActionLib.js"></script>
+							<link href='http://fonts.googleapis.com/css?family=Oswald:300,400|Fjalla+One|Satisfy|Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+		
+			<script type="text/javascript">
+				(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-127784648-1', 'auto');
+				ga('require', 'ec');</script>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<!--[if IE 8]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+	</head>
+	<body id="product" class="product product-51 product-panini-viande-hachee category-13 category-nos-paninis hide-left-column hide-right-column lang_fr an_theme1_1">
+					<div id="page">
+			<div class="bloc_uber">
+			<a href="https://www.ubereats.com/paris/food-delivery/very-nice-pizza-street-foods/qmac6gs5QYG04uo-xKGGWw/" style="position: fixed;top: 0;z-index: 9999;" target="_blank">
+				<img src="https://storage.googleapis.com/ubereats/RestaurantBadge-Fr/PM_170186-250x250-Black_BG.jpg"alt="ubereats" width="200px">
+			</a>
+			</div>
+			<!--div id="pastille" class="bg-green"></div-->
+			<div class="header-container">
+				<header id="header">
+					
+					<div class="nav">
+						<div class="container">
+							<div class="row">
+								<nav>
+<!-- Block permanent links module HEADER -->
+<ul id="header_links">
+	<li id="header_link_contact" style="margin-right: 30px;"><a href="http://www.very-nice-pizza.fr/nous-contacter" title="contact">Contactez-nous</a></li>
+	<li id="header_link_magasins"><a href="/magasins" title="Où nous trouver?">Où nous trouver?</a></li>
+	<!--li id="header_link_bookmark">
+		<script type="text/javascript">writeBookmarkLink('http://www.very-nice-pizza.fr/nos-paninis/51-panini-viande-hachee.html', 'Panini Viande hachée - Very Nice Pizza', 'favoris');</script>
+	</li-->
+</ul>
+<!-- /Block permanent links module HEADER -->
+<!-- Block languages module -->
+<!-- /Block languages module -->
+</nav>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="container">
+							<div class="row chook_top">
+								<div id="search_block_top" class="col-sm-4 clearfix">
+
+								</div>
+								<div id="header_logo" class="col-sm-4 clearfix">
+									<a href="http://www.very-nice-pizza.fr/" title="Very Nice Pizza">
+										<img class="logo img-responsive" src="http://www.very-nice-pizza.fr/img/very-nice-pizza-logo-1527924715.jpg" alt="Very Nice Pizza" width="281" height="72"/>
+									</a>
+								</div>
+									<!-- Menu -->
+	<div id="block_top_menu" class="sf-contener clearfix col-lg-12">
+		<div class="cat-title">Menu</div>
+		<ul class="sf-menu clearfix menu-content">
+			<li><a href="http://www.very-nice-pizza.fr/16-nos-menus" title="Nos menus">Nos menus</a><ul><li><a href="http://www.very-nice-pizza.fr/22-menus-burger" title="Menus Burger">Menus Burger</a></li><li><a href="http://www.very-nice-pizza.fr/24-menus-panini" title="Menus panini">Menus panini</a></li><li><a href="http://www.very-nice-pizza.fr/25-menus-sandwich" title="Menus sandwich">Menus sandwich</a></li><li><a href="http://www.very-nice-pizza.fr/26-menus-salade" title="Menus salade">Menus salade</a></li></ul></li><li><a href="http://www.very-nice-pizza.fr/12-nos-pizzas" title="Nos Pizzas">Nos Pizzas</a></li><li><a href="http://www.very-nice-pizza.fr/15-nos-burgers" title="Nos burgers">Nos burgers</a></li><li><a href="http://www.very-nice-pizza.fr/13-nos-paninis" title="Nos paninis">Nos paninis</a></li><li><a href="http://www.very-nice-pizza.fr/18-nos-sandwichs" title="Nos sandwichs">Nos sandwichs</a></li><li><a href="http://www.very-nice-pizza.fr/14-nos-salades" title="Nos salades">Nos salades</a></li><li><a href="http://www.very-nice-pizza.fr/17-nos-starters" title="Nos starters">Nos starters</a></li><li><a href="http://www.very-nice-pizza.fr/19-nos-desserts" title="Nos desserts">Nos desserts</a></li><li><a href="http://www.very-nice-pizza.fr/20-nos-boissons" title="Nos boissons">Nos boissons</a></li><li><a href="/magasins" title="O&ugrave; sommes-nous?">O&ugrave; sommes-nous?</a></li>
+
+					</ul>
+	</div>
+	<!--/ Menu -->
+							</div>
+						</div>
+					</div>
+				</header>
+				
+			</div>
+			<div id="slider_row" class="row">
+				
+			</div>
+			<div class="columns-container">
+				<div id="columns" class="container">
+											
+<!-- Breadcrumb -->
+<div class="breadcrumb clearfix">
+	<a class="home" href="http://www.very-nice-pizza.fr/" title="retour &agrave; Accueil"><i class="icon-home"></i></a>
+			<span class="navigation-pipe">&gt;</span>
+					<span class="navigation_page"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://www.very-nice-pizza.fr/13-nos-paninis" title="Nos paninis" ><span itemprop="title">Nos paninis</span></a></span><span class="navigation-pipe">></span>Panini Viande hachée</span>
+			</div>
+<!-- /Breadcrumb -->
+
+										<div class="row">
+																		<div id="center_column" class="center_column col-xs-12 col-sm-12">
+	
+
+							<div itemscope itemtype="http://schema.org/Product">
+	<meta itemprop="url" content="http://www.very-nice-pizza.fr/nos-paninis/51-panini-viande-hachee.html">
+	<div class="primary_block row">
+					<div class="container">
+				<div class="top-hr"></div>
+			</div>
+								<!-- left infos-->
+		<div class="pb-left-column col-xs-12 col-sm-4 col-md-5">
+			<!-- product img-->
+			<div id="image-block" class="clearfix">
+																	<span id="view_full_size">
+													<a class="jqzoom" title="Panini Viande hachée" rel="gal1" href="http://www.very-nice-pizza.fr/72-thickbox_default/panini-viande-hachee.jpg">
+								<img itemprop="image" src="http://www.very-nice-pizza.fr/72-large_default/panini-viande-hachee.jpg" title="Panini Viande hachée" alt="Panini Viande hachée"/>
+							</a>
+											</span>
+							</div> <!-- end image-block -->
+							<!-- thumbnails -->
+				<div id="views_block" class="clearfix hidden">
+										<div id="thumbs_list">
+						<ul id="thumbs_list_frame">
+																																																						<li id="thumbnail_72" class="last">
+									<a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'http://www.very-nice-pizza.fr/72-large_default/panini-viande-hachee.jpg',largeimage: 'http://www.very-nice-pizza.fr/72-thickbox_default/panini-viande-hachee.jpg'}" title="Panini Viande hachée">
+										<img class="img-responsive" id="thumb_72" src="http://www.very-nice-pizza.fr/72-cart_default/panini-viande-hachee.jpg" alt="Panini Viande hachée" title="Panini Viande hachée" height="80" width="80" itemprop="image" />
+									</a>
+								</li>
+																			</ul>
+					</div> <!-- end thumbs_list -->
+									</div> <!-- end views-block -->
+				<!-- end thumbnails -->
+								</div> <!-- end pb-left-column -->
+		<!-- end left infos-->
+		<!-- center infos -->
+		<div class="pb-center-column col-xs-12 col-sm-4">
+						<h1 itemprop="name">Panini Viande hachée</h1>
+			<p id="product_reference" style="display: none;">
+				<label>R&eacute;f&eacute;rence </label>
+				<span class="editable" itemprop="sku""></span>
+			</p>
+			
+							<div id="short_description_block">
+											<div id="short_description_content" class="rte align_justify" itemprop="description"><p><strong>Ingrédients:</strong></p>
+<ul><li>Fromage</li>
+<li>Tomate</li>
+<li>Viande hachée</li>
+</ul></div>
+					
+										<!---->
+				</div> <!-- end short_description_block -->
+									<!-- availability or doesntExist -->
+			<p id="availability_statut" style="display: none;">
+				
+				<span id="availability_value" class="label label-warning">Ce produit n&#039;est plus en stock</span>
+			</p>
+						<p id="availability_date" style="display: none;">
+				<span id="availability_date_label">Date de disponibilit&eacute;:</span>
+				<span id="availability_date_value"></span>
+			</p>
+			<!-- Out of stock hook -->
+			<div id="oosHook">
+				
+			</div>
+						
+		</div>
+		<!-- end center infos-->
+		<!-- pb-right-column-->
+		<div class="pb-right-column col-xs-12 col-sm-4 col-md-3">
+						<!-- add to cart form-->
+			<form id="buy_block" action="http://www.very-nice-pizza.fr/panier" method="post">
+				<!-- hidden datas -->
+				<p class="hidden">
+					<input type="hidden" name="token" value="2491eb6b636e49449a99ebe62634ea57" />
+					<input type="hidden" name="id_product" value="51" id="product_page_product_id" />
+					<input type="hidden" name="add" value="1" />
+					<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
+				</p>
+				<div class="box-info-product">
+					<div class="content_prices clearfix">
+													<!-- prices -->
+							<div>
+								<p class="our_price_display" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span id="our_price_display" class="price" itemprop="price" content="5.5">5,50 €</span> TTC<meta itemprop="priceCurrency" content="EUR" /></p>
+								<p id="reduction_percent"  style="display:none;"><span id="reduction_percent_display"></span></p>
+								<p id="reduction_amount"  style="display:none"><span id="reduction_amount_display"></span></p>
+								<p id="old_price" class="hidden"><span id="old_price_display"><span class="price"></span> TTC</span></p>
+															</div> <!-- end prices -->
+																											 
+						
+                        
+						<div class="clear"></div>
+					</div> <!-- end content_prices -->
+					<div class="product_attributes clearfix">
+						<!-- quantity wanted -->
+												<!-- minimal quantity wanted -->
+						<p id="minimal_quantity_wanted_p" style="display: none;">
+							La quantit&eacute; minimale pour pouvoir commander ce produit est <b id="minimal_quantity_label">1</b>
+						</p>
+											</div> <!-- end product_attributes -->
+					<div class="box-cart-bottom">
+						<div class="unvisible">
+							<p id="add_to_cart" class="buttons_bottom_block no-print">
+								<button type="submit" name="Submit" class="exclusive">
+									<span>Ajouter au panier</span>
+								</button>
+							</p>
+						</div>
+											</div> <!-- end box-cart-bottom -->
+				</div> <!-- end box-info-product -->
+			</form>
+					</div> <!-- end pb-right-column-->
+	</div> <!-- end primary_block -->
+									<!--HOOK_PRODUCT_TAB -->
+		<section class="page-product-box">
+			
+					</section>
+		<!--end HOOK_PRODUCT_TAB -->
+				<section class="page-product-box blockproductscategory">
+	<h3 class="productscategory_h3 page-product-heading">
+					5 autres produits dans la même catégorie :
+			</h3>
+	<div id="productscategory_list" class="clearfix">
+		<ul id="bxslider1" class="bxslider clearfix">
+					<li class="product-box item">
+				<a href="http://www.very-nice-pizza.fr/nos-paninis/50-panini-jambon.html" class="lnk_img product-image" title="Panini Jambon"><img src="http://www.very-nice-pizza.fr/71-home_default/panini-jambon.jpg" alt="Panini Jambon" /></a>
+				<h5 itemprop="name" class="product-name">
+					<a href="http://www.very-nice-pizza.fr/nos-paninis/50-panini-jambon.html" title="Panini Jambon">Panini Jambon</a>
+				</h5>
+								<br />
+								<div class="clearfix" style="margin-top:5px">
+									</div>
+			</li>
+					<li class="product-box item">
+				<a href="http://www.very-nice-pizza.fr/nos-paninis/52-panini-poulet.html" class="lnk_img product-image" title="Panini Poulet"><img src="http://www.very-nice-pizza.fr/73-home_default/panini-poulet.jpg" alt="Panini Poulet" /></a>
+				<h5 itemprop="name" class="product-name">
+					<a href="http://www.very-nice-pizza.fr/nos-paninis/52-panini-poulet.html" title="Panini Poulet">Panini Poulet</a>
+				</h5>
+								<br />
+								<div class="clearfix" style="margin-top:5px">
+									</div>
+			</li>
+					<li class="product-box item">
+				<a href="http://www.very-nice-pizza.fr/nos-paninis/53-panini-chevre.html" class="lnk_img product-image" title="Panini Chèvre"><img src="http://www.very-nice-pizza.fr/74-home_default/panini-chevre.jpg" alt="Panini Chèvre" /></a>
+				<h5 itemprop="name" class="product-name">
+					<a href="http://www.very-nice-pizza.fr/nos-paninis/53-panini-chevre.html" title="Panini Chèvre">Panini Chèvre</a>
+				</h5>
+								<br />
+								<div class="clearfix" style="margin-top:5px">
+									</div>
+			</li>
+					<li class="product-box item">
+				<a href="http://www.very-nice-pizza.fr/nos-paninis/54-panini-thon.html" class="lnk_img product-image" title="Panini Thon"><img src="http://www.very-nice-pizza.fr/75-home_default/panini-thon.jpg" alt="Panini Thon" /></a>
+				<h5 itemprop="name" class="product-name">
+					<a href="http://www.very-nice-pizza.fr/nos-paninis/54-panini-thon.html" title="Panini Thon">Panini Thon</a>
+				</h5>
+								<br />
+								<div class="clearfix" style="margin-top:5px">
+									</div>
+			</li>
+					<li class="product-box item">
+				<a href="http://www.very-nice-pizza.fr/nos-paninis/55-panini-savoyard.html" class="lnk_img product-image" title="Panini Savoyard"><img src="http://www.very-nice-pizza.fr/76-home_default/panini-savoyard.jpg" alt="Panini Savoyard" /></a>
+				<h5 itemprop="name" class="product-name">
+					<a href="http://www.very-nice-pizza.fr/nos-paninis/55-panini-savoyard.html" title="Panini Savoyard">Panini...</a>
+				</h5>
+								<br />
+								<div class="clearfix" style="margin-top:5px">
+									</div>
+			</li>
+				</ul>
+	</div>
+</section>
+
+				<script type="text/javascript">
+					jQuery(document).ready(function(){
+						var MBG = GoogleAnalyticEnhancedECommerce;
+						MBG.setCurrency('EUR');
+						MBG.addProductDetailView({"id":51,"name":"\"Panini Viande hach\\u00e9e\"","category":"\"nos-paninis\"","brand":"false","variant":"null","type":"typical","position":"0","quantity":1,"list":"product","url":"","price":"4.58"});
+					});
+				</script>		<!-- description & features -->
+			</div> <!-- itemscope product wrapper -->
+ 
+					</div><!-- #center_column -->
+										</div><!-- .row -->
+				</div><!-- #columns -->
+			</div><!-- .columns-container -->
+							<!-- Footer -->
+				
+				<div class="footer-container">
+					<footer id="footer"  class="container">
+						<div class="row"><!-- MODULE Block reinsurance -->
+<div id="reinsurance_block" class="clearfix">
+	<ul class="width5">	
+					<li><img src="http://www.very-nice-pizza.fr/modules/blockreinsurance/img/reinsurance-1-1.jpg" alt="Pâte fraîche chaque jour" /> <span>Pâte fraîche chaque jour</span></li>                        
+					<li><img src="http://www.very-nice-pizza.fr/modules/blockreinsurance/img/reinsurance-2-1.jpg" alt="COMMANDEZ AU 
+01 40 21 05 71" /> <span>COMMANDEZ AU 
+01 40 21 05 71</span></li>                        
+					<li><img src="http://www.very-nice-pizza.fr/modules/blockreinsurance/img/reinsurance-3-1.jpg" alt="Certifié Halal" /> <span>Certifié Halal</span></li>                        
+					<li><img src="http://www.very-nice-pizza.fr/modules/blockreinsurance/img/reinsurance-6-1.jpg" alt="Ouvert 7 jours sur 7" /> <span>Ouvert 7 jours sur 7</span></li>                        
+					<li><img src="http://www.very-nice-pizza.fr/modules/blockreinsurance/img/reinsurance-7-1.jpg" alt="de 11h00 à 23h00" /> <span>de 11h00 à 23h00</span></li>                        
+			</ul>
+</div>
+<!-- /MODULE Block reinsurance -->
+
+<!-- MODULE Block contact infos -->
+<section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4">
+	<div>
+        <h4>Informations sur votre boutique</h4>
+        <ul class="toggle-footer">
+                        	<li>
+            		<i class="icon-map-marker"></i>Very Nice Pizza, 38 rue Jean Pierre Timbaud
+75011 Paris            	</li>
+                                    	<li>
+            		<i class="icon-phone"></i>Appelez-nous au : 
+            		<span>01 40 21 05 71</span>
+            	</li>
+                                    	<li>
+            		<i class="icon-envelope-alt"></i>E-mail : 
+            		<span><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%65%72%79%6e%69%63%65%70%69%7a%7a%61.%63%6f%6e%74%61%63%74@%67%6d%61%69%6c.%63%6f%6d" >&#x76;&#x65;&#x72;&#x79;&#x6e;&#x69;&#x63;&#x65;&#x70;&#x69;&#x7a;&#x7a;&#x61;&#x2e;&#x63;&#x6f;&#x6e;&#x74;&#x61;&#x63;&#x74;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></span>
+            	</li>
+                    </ul>
+    </div>
+</section>
+<section class="footer-block col-xs-0 col-sm-1"></section>
+<!-- /MODULE Block contact infos -->
+
+<!-- Block categories module -->
+<section class="blockcategories_footer footer-block col-xs-12 col-sm-2">
+	<h4>Catégories</h4>
+	<div class="category_footer toggle-footer">
+		<div class="list">
+			<ul class="tree dhtml">
+												
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/16-nos-menus" title="">
+		Nos menus
+	</a>
+			<ul>
+												
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/22-menus-burger" title="">
+		Menus Burger
+	</a>
+	</li>
+
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/24-menus-panini" title="">
+		Menus panini
+	</a>
+	</li>
+
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/25-menus-sandwich" title="">
+		Menus sandwich
+	</a>
+	</li>
+
+																
+<li class="last">
+	<a 
+	href="http://www.very-nice-pizza.fr/26-menus-salade" title="">
+		Menus salade
+	</a>
+	</li>
+
+									</ul>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/12-nos-pizzas" title="">
+		Nos Pizzas
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/13-nos-paninis" title="">
+		Nos paninis
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/15-nos-burgers" title="">
+		Nos burgers
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/18-nos-sandwichs" title="">
+		Nos sandwichs
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/14-nos-salades" title="">
+		Nos salades
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/17-nos-starters" title="">
+		Nos starters
+	</a>
+	</li>
+
+							
+																
+<li >
+	<a 
+	href="http://www.very-nice-pizza.fr/19-nos-desserts" title="">
+		Nos desserts
+	</a>
+	</li>
+
+							
+																
+<li class="last">
+	<a 
+	href="http://www.very-nice-pizza.fr/20-nos-boissons" title="">
+		Nos boissons
+	</a>
+	</li>
+
+							
+										</ul>
+		</div>
+	</div> <!-- .category_footer -->
+</section>
+<!-- /Block categories module -->
+
+	<!-- MODULE Block footer -->
+	<section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
+		<h4>Informations</h4>
+		<ul class="toggle-footer">
+									<li class="item">
+				<a href="http://www.very-nice-pizza.fr/nouveaux-produits" title="Nouveaux produits">
+					Nouveaux produits
+				</a>
+			</li>
+													<li class="item">
+					<a href="http://www.very-nice-pizza.fr/magasins" title="Notre restaurant">
+						Notre restaurant
+					</a>
+				</li>
+									<li class="item">
+				<a href="http://www.very-nice-pizza.fr/nous-contacter" title="Contactez-nous">
+					Contactez-nous
+				</a>
+			</li>
+												<li>
+				<a href="http://www.very-nice-pizza.fr/plan-site" title="sitemap">
+					sitemap
+				</a>
+			</li>
+					</ul>
+		
+	</section>
+		<section class="bottom-footer col-xs-12">
+		<div>
+			&copy; 2019 Ecommerce software by Claire Duvauchelle
+		</div>
+	</section>
+		<!-- /MODULE Block footer -->
+<script>
+var scrolltotop = {
+	setting: { 
+		
+			startline:100, scrollto: 0, scrollduration:1000, fadeduration:[500, 100]
+		
+	},
+	controlHTML: 
+		'<img style="width:50px; height:50px" src="/modules/an_scrolltop/img/1userUp.png" />'
+	,
+	controlattrs: {
+		
+			offsetx:25, offsety:25
+			
+	},
+	anchorkeyword: '#top',
+	state: {isvisible:false, shouldvisible:false},
+	scrollup:function(){
+		if (!this.cssfixedsupport)
+			this.$control.css({opacity:0})
+		var dest=isNaN(this.setting.scrollto)? this.setting.scrollto : parseInt(this.setting.scrollto)
+		if (typeof dest=="string" && jQuery('#'+dest).length==1)
+			dest=jQuery('#'+dest).offset().top
+		else
+			dest=0
+		this.$body.animate({scrollTop: dest}, this.setting.scrollduration);
+	},
+
+	keepfixed:function(){
+		var $window=jQuery(window)
+		var controlx=$window.scrollLeft() + $window.width() - this.$control.width() - this.controlattrs.offsetx
+		var controly=$window.scrollTop() + $window.height() - this.$control.height() - this.controlattrs.offsety
+		this.$control.css({left:controlx+'px', top:controly+'px'})
+	},
+
+	togglecontrol:function(){
+		var scrolltop=jQuery(window).scrollTop()
+		if (!this.cssfixedsupport)
+			this.keepfixed()
+		this.state.shouldvisible=(scrolltop>=this.setting.startline)? true : false
+		if (this.state.shouldvisible && !this.state.isvisible){
+			this.$control.stop().animate({opacity:1}, this.setting.fadeduration[0])
+			this.state.isvisible=true
+		}
+		else if (this.state.shouldvisible==false && this.state.isvisible){
+			this.$control.stop().animate({opacity:0}, this.setting.fadeduration[1])
+			this.state.isvisible=false
+		}
+	},
+	
+	init:function(){
+		jQuery(document).ready(function($){
+			var mainobj=scrolltotop
+			var iebrws=document.all
+			mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest
+			mainobj.$body=(window.opera)? (document.compatMode=="CSS1Compat"? $('html') : $('body')) : $('html,body')
+			mainobj.$control=$('<div id="topcontrol">'+mainobj.controlHTML+'</div>')
+				.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer', zIndex:9999})
+				.attr({title:'Scroll Back to Top'})
+				.click(function(){mainobj.scrollup(); return false})
+				.appendTo('body')
+			if (document.all && !window.XMLHttpRequest && mainobj.$control.text()!='')
+				mainobj.$control.css({width:mainobj.$control.width()})
+			mainobj.togglecontrol()
+			$('a[href="' + mainobj.anchorkeyword +'"]').click(function(){
+				mainobj.scrollup()
+				return false
+			})
+			$(window).bind('scroll resize', function(e){
+				mainobj.togglecontrol()
+			})
+		})
+	}
+}
+$(document).ready(function(){
+	scrolltotop.init();
+});
+</script>
+
+				<script type="text/javascript">
+					ga('send', 'pageview');
+				</script></div>
+					</footer>
+				</div><!-- #footer -->
+					</div><!-- #page -->
+</body></html>
